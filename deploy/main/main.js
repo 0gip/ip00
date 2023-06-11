@@ -3871,8 +3871,7 @@ var ip00 = (function(exports) {
   const HeaderDropMenu_Array = [
     ['ip00 Rooms', ''],
     ['Main Room', 'https://cytu.be/r/ip00'],
-    ['Second Room', 'https://cytu.be/r/ip00'],
-    //  ['Watch Party', 'https://beta.synchtube.me/r/SecretTwitchRoom'],
+    //  ['Watch Party', 'https://beta.synchtube.me/r/'],
     ['Credits', ''],
     [
       'CyTube FAQ',
@@ -3968,7 +3967,7 @@ var ip00 = (function(exports) {
       'https://papertek.github.io/CyDJ/deploy/beta/css/twitchclassic.css',
     ],
     [
-      'Old DJ',
+      'Old',
       'https://papertek.github.io/CyDJ/deploy/beta/css/DJDefault.css',
     ],
     [
@@ -3991,15 +3990,6 @@ var ip00 = (function(exports) {
 
   const EmptyCornerBackground = [
     'https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_a054f4001b6d4f098e7969c988debd18/default/light/2.0',
-    'https://cdn.betterttv.net/emote/5dfc5d868608fb0da4120b59/2x',
-    'https://images-ext-1.discordapp.net/external/1guxWfPcmO5XSXYMjKO79mRQ3UORmbKBZsVYyg4Cr-M/%3Fv%3D1/https/cdn.discordapp.com/emojis/891194776798498826.gif',
-    'https://cdn.discordapp.com/attachments/899888900611375184/901313787951480862/small.png',
-    'https://cdn.7tv.app/emote/60d2c62291b6751bc1e05add/4x',
-    'https://media.discordapp.net/attachments/904501042148958219/914300481633914970/JohnJamSmall.gif',
-    'https://media.discordapp.net/attachments/828331546658340905/914594224614277212/unknown.png',
-    'https://media.discordapp.net/attachments/904501042148958219/914593675445690468/unknown.png',
-    'https://media.discordapp.net/attachments/904501042148958219/914594852182831165/pacific.gif',
-    'https://media.discordapp.net/attachments/915415328496951316/925616111242842122/unknown.png',
   ];
 
   // /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -6142,7 +6132,7 @@ var ip00 = (function(exports) {
       NAY.play();
     });
   }
-  // RARE JOHN NOTE!! define data.count later, i think its defined somewhere in cytube side
+  // RARE **** NOTE!! define data.count later, i think its defined somewhere in cytube side
   /* const votehey = function(data) {
     const icon = $('#hey-btn').find('.glyphicon').remove();
     if (data.count > 0) {
@@ -7292,7 +7282,7 @@ var ip00 = (function(exports) {
     ''   for normal users
     */
   const USERLIST_COLORS = {
-    'pokegaard': {usertype: 'owner', css: 'color: #00FF7F !important;'},
+    'IP0G': {usertype: 'owner', css: 'color: #00FF7F !important;'},
     'Amberainbow': {usertype: '', css: 'color: #FF69B4 !important;'},
   };
 
