@@ -7282,11 +7282,11 @@ var ip00 = (function(exports) {
     ''   for normal users
     */
   const USERLIST_COLORS = {
+    '': {usertype: 'owner', css: 'color: #7affbc !important;'},
     'IP0G': {
       usertype: 'owner',
       css: 'color: #00FFFF !important; text-shadow: 1px 0 10px #00FFFF !important;'
     },
-    '': {usertype: 'owner', css: 'color: #7affbc !important;'},
   };
 
   /* -----CONFIG----- */
