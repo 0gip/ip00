@@ -1,19 +1,20 @@
-var cydj = (function (exports) {
+var ip00 = (function(exports) {
   'use strict';
 
   /*!
    * Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com
-   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-   * Copyright 2022 Fonticons, Inc.
+   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT
+   * License) Copyright 2022 Fonticons, Inc.
    */
   function ownKeys(object, enumerableOnly) {
     var keys = Object.keys(object);
 
     if (Object.getOwnPropertySymbols) {
       var symbols = Object.getOwnPropertySymbols(object);
-      enumerableOnly && (symbols = symbols.filter(function (sym) {
+      enumerableOnly && (symbols = symbols.filter(function(sym) {
         return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-      })), keys.push.apply(keys, symbols);
+      })),
+          keys.push.apply(keys, symbols);
     }
 
     return keys;
@@ -22,29 +23,38 @@ var cydj = (function (exports) {
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = null != arguments[i] ? arguments[i] : {};
-      i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      i % 2 ? ownKeys(Object(source), !0).forEach(function(key) {
         _defineProperty(target, key, source[key]);
-      }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
-        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-      });
+      }) :
+          Object.getOwnPropertyDescriptors ?
+              Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) :
+              ownKeys(Object(source)).forEach(function(key) {
+                Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+              });
     }
 
     return target;
   }
 
   function _typeof(obj) {
-    "@babel/helpers - typeof";
+    '@babel/helpers - typeof';
 
-    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-      return typeof obj;
-    } : function (obj) {
-      return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    }, _typeof(obj);
+    return _typeof = 'function' == typeof Symbol && 'symbol' == typeof Symbol.iterator ?
+               function(obj) {
+                 return typeof obj;
+               } :
+               function(obj) {
+                 return obj && 'function' == typeof Symbol && obj.constructor === Symbol &&
+                         obj !== Symbol.prototype ?
+                     'symbol' :
+                     typeof obj;
+               },
+           _typeof(obj);
   }
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
+      throw new TypeError('Cannot call a class as a function');
     }
   }
 
@@ -53,7 +63,7 @@ var cydj = (function (exports) {
       var descriptor = props[i];
       descriptor.enumerable = descriptor.enumerable || false;
       descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
+      if ('value' in descriptor) descriptor.writable = true;
       Object.defineProperty(target, descriptor.key, descriptor);
     }
   }
@@ -61,20 +71,14 @@ var cydj = (function (exports) {
   function _createClass(Constructor, protoProps, staticProps) {
     if (protoProps) _defineProperties(Constructor.prototype, protoProps);
     if (staticProps) _defineProperties(Constructor, staticProps);
-    Object.defineProperty(Constructor, "prototype", {
-      writable: false
-    });
+    Object.defineProperty(Constructor, 'prototype', {writable: false});
     return Constructor;
   }
 
   function _defineProperty(obj, key, value) {
     if (key in obj) {
-      Object.defineProperty(obj, key, {
-        value: value,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      });
+      Object.defineProperty(
+          obj, key, {value: value, enumerable: true, configurable: true, writable: true});
     } else {
       obj[key] = value;
     }
@@ -83,11 +87,13 @@ var cydj = (function (exports) {
   }
 
   function _slicedToArray(arr, i) {
-    return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+    return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) ||
+        _unsupportedIterableToArray(arr, i) || _nonIterableRest();
   }
 
   function _toConsumableArray(arr) {
-    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+    return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) ||
+        _nonIterableSpread();
   }
 
   function _arrayWithoutHoles(arr) {
@@ -99,11 +105,15 @@ var cydj = (function (exports) {
   }
 
   function _iterableToArray(iter) {
-    if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+    if (typeof Symbol !== 'undefined' && iter[Symbol.iterator] != null ||
+        iter['@@iterator'] != null)
+      return Array.from(iter);
   }
 
   function _iterableToArrayLimit(arr, i) {
-    var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+    var _i = arr == null ?
+        null :
+        typeof Symbol !== 'undefined' && arr[Symbol.iterator] || arr['@@iterator'];
 
     if (_i == null) return;
     var _arr = [];
@@ -123,7 +133,7 @@ var cydj = (function (exports) {
       _e = err;
     } finally {
       try {
-        if (!_n && _i["return"] != null) _i["return"]();
+        if (!_n && _i['return'] != null) _i['return']();
       } finally {
         if (_d) throw _e;
       }
@@ -134,11 +144,12 @@ var cydj = (function (exports) {
 
   function _unsupportedIterableToArray(o, minLen) {
     if (!o) return;
-    if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+    if (typeof o === 'string') return _arrayLikeToArray(o, minLen);
     var n = Object.prototype.toString.call(o).slice(8, -1);
-    if (n === "Object" && o.constructor) n = o.constructor.name;
-    if (n === "Map" || n === "Set") return Array.from(o);
-    if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+    if (n === 'Object' && o.constructor) n = o.constructor.name;
+    if (n === 'Map' || n === 'Set') return Array.from(o);
+    if (n === 'Arguments' || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))
+      return _arrayLikeToArray(o, minLen);
   }
 
   function _arrayLikeToArray(arr, len) {
@@ -150,11 +161,13 @@ var cydj = (function (exports) {
   }
 
   function _nonIterableSpread() {
-    throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    throw new TypeError(
+        'Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
   }
 
   function _nonIterableRest() {
-    throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+    throw new TypeError(
+        'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.');
   }
 
   var noop = function noop() {};
@@ -162,27 +175,26 @@ var cydj = (function (exports) {
   var _WINDOW = {};
   var _DOCUMENT = {};
   var _MUTATION_OBSERVER = null;
-  var _PERFORMANCE = {
-    mark: noop,
-    measure: noop
-  };
+  var _PERFORMANCE = {mark: noop, measure: noop};
 
   try {
     if (typeof window !== 'undefined') _WINDOW = window;
     if (typeof document !== 'undefined') _DOCUMENT = document;
     if (typeof MutationObserver !== 'undefined') _MUTATION_OBSERVER = MutationObserver;
     if (typeof performance !== 'undefined') _PERFORMANCE = performance;
-  } catch (e) {}
+  } catch (e) {
+  }
 
-  var _ref = _WINDOW.navigator || {},
-      _ref$userAgent = _ref.userAgent,
+  var _ref = _WINDOW.navigator || {}, _ref$userAgent = _ref.userAgent,
       userAgent = _ref$userAgent === void 0 ? '' : _ref$userAgent;
   var WINDOW = _WINDOW;
   var DOCUMENT = _DOCUMENT;
   var MUTATION_OBSERVER = _MUTATION_OBSERVER;
   var PERFORMANCE = _PERFORMANCE;
   !!WINDOW.document;
-  var IS_DOM = !!DOCUMENT.documentElement && !!DOCUMENT.head && typeof DOCUMENT.addEventListener === 'function' && typeof DOCUMENT.createElement === 'function';
+  var IS_DOM = !!DOCUMENT.documentElement && !!DOCUMENT.head &&
+      typeof DOCUMENT.addEventListener === 'function' &&
+      typeof DOCUMENT.createElement === 'function';
   var IS_IE = ~userAgent.indexOf('MSIE') || ~userAgent.indexOf('Trident/');
 
   var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
@@ -197,7 +209,7 @@ var cydj = (function (exports) {
   var HTML_CLASS_I2SVG_BASE_CLASS = 'fontawesome-i2svg';
   var MUTATION_APPROACH_ASYNC = 'async';
   var TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS = ['HTML', 'HEAD', 'STYLE', 'SCRIPT'];
-  var PRODUCTION = function () {
+  var PRODUCTION = function() {
     try {
       return process.env.NODE_ENV === 'production';
     } catch (e) {
@@ -248,32 +260,83 @@ var cydj = (function (exports) {
     'fa-solid': 'fas',
     'fa-thin': 'fat'
   };
-  var ICON_SELECTION_SYNTAX_PATTERN = /fa[srltdbk\-\ ]/; // eslint-disable-line no-useless-escape
+  var ICON_SELECTION_SYNTAX_PATTERN = /fa[srltdbk\-\ ]/;  // eslint-disable-line no-useless-escape
 
   var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
-  var FONT_FAMILY_PATTERN = /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Kit)?.*/i; // TODO: do we need to handle font-weight for kit SVG pseudo-elements?
+  var FONT_FAMILY_PATTERN =
+      /Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Kit)?.*/i;  // TODO:
+                                                                                            // do we
+                                                                                            // need
+                                                                                            // to
+                                                                                            // handle
+                                                                                            // font-weight
+                                                                                            // for
+                                                                                            // kit
+                                                                                            // SVG
+                                                                                            // pseudo-elements?
 
-  var FONT_WEIGHT_TO_PREFIX = {
-    '900': 'fas',
-    '400': 'far',
-    'normal': 'far',
-    '300': 'fal',
-    '100': 'fat'
-  };
+  var FONT_WEIGHT_TO_PREFIX =
+      {'900': 'fas', '400': 'far', 'normal': 'far', '300': 'fal', '100': 'fat'};
   var oneToTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   var oneToTwenty = oneToTen.concat([11, 12, 13, 14, 15, 16, 17, 18, 19, 20]);
-  var ATTRIBUTES_WATCHED_FOR_MUTATION = ['class', 'data-prefix', 'data-icon', 'data-fa-transform', 'data-fa-mask'];
+  var ATTRIBUTES_WATCHED_FOR_MUTATION =
+      ['class', 'data-prefix', 'data-icon', 'data-fa-transform', 'data-fa-mask'];
   var DUOTONE_CLASSES = {
     GROUP: 'duotone-group',
     SWAP_OPACITY: 'swap-opacity',
     PRIMARY: 'primary',
     SECONDARY: 'secondary'
   };
-  var RESERVED_CLASSES = [].concat(_toConsumableArray(Object.keys(STYLE_TO_PREFIX)), ['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', 'beat', 'border', 'fade', 'beat-fade', 'bounce', 'flip-both', 'flip-horizontal', 'flip-vertical', 'flip', 'fw', 'inverse', 'layers-counter', 'layers-text', 'layers', 'li', 'pull-left', 'pull-right', 'pulse', 'rotate-180', 'rotate-270', 'rotate-90', 'rotate-by', 'shake', 'spin-pulse', 'spin-reverse', 'spin', 'stack-1x', 'stack-2x', 'stack', 'ul', DUOTONE_CLASSES.GROUP, DUOTONE_CLASSES.SWAP_OPACITY, DUOTONE_CLASSES.PRIMARY, DUOTONE_CLASSES.SECONDARY]).concat(oneToTen.map(function (n) {
-    return "".concat(n, "x");
-  })).concat(oneToTwenty.map(function (n) {
-    return "w-".concat(n);
-  }));
+  var RESERVED_CLASSES = [].concat(
+                               _toConsumableArray(Object.keys(STYLE_TO_PREFIX)),
+                               [
+                                 '2xs',
+                                 'xs',
+                                 'sm',
+                                 'lg',
+                                 'xl',
+                                 '2xl',
+                                 'beat',
+                                 'border',
+                                 'fade',
+                                 'beat-fade',
+                                 'bounce',
+                                 'flip-both',
+                                 'flip-horizontal',
+                                 'flip-vertical',
+                                 'flip',
+                                 'fw',
+                                 'inverse',
+                                 'layers-counter',
+                                 'layers-text',
+                                 'layers',
+                                 'li',
+                                 'pull-left',
+                                 'pull-right',
+                                 'pulse',
+                                 'rotate-180',
+                                 'rotate-270',
+                                 'rotate-90',
+                                 'rotate-by',
+                                 'shake',
+                                 'spin-pulse',
+                                 'spin-reverse',
+                                 'spin',
+                                 'stack-1x',
+                                 'stack-2x',
+                                 'stack',
+                                 'ul',
+                                 DUOTONE_CLASSES.GROUP,
+                                 DUOTONE_CLASSES.SWAP_OPACITY,
+                                 DUOTONE_CLASSES.PRIMARY,
+                                 DUOTONE_CLASSES.SECONDARY
+                               ])
+                             .concat(oneToTen.map(function(n) {
+                               return ''.concat(n, 'x');
+                             }))
+                             .concat(oneToTwenty.map(function(n) {
+                               return 'w-'.concat(n);
+                             }));
 
   var initial = WINDOW.FontAwesomeConfig || {};
 
@@ -286,9 +349,9 @@ var cydj = (function (exports) {
   }
 
   function coerce(val) {
-    // Getting an empty string will occur if the attribute is set on the HTML tag but without a value
-    // We'll assume that this is an indication that it should be toggled to true
-    // For example <script data-search-pseudo-elements src="..."></script>
+    // Getting an empty string will occur if the attribute is set on the HTML tag but without a
+    // value We'll assume that this is an indication that it should be toggled to true For example
+    // <script data-search-pseudo-elements src="..."></script>
     if (val === '') return true;
     if (val === 'false') return false;
     if (val === 'true') return true;
@@ -296,11 +359,18 @@ var cydj = (function (exports) {
   }
 
   if (DOCUMENT && typeof DOCUMENT.querySelector === 'function') {
-    var attrs = [['data-family-prefix', 'familyPrefix'], ['data-style-default', 'styleDefault'], ['data-replacement-class', 'replacementClass'], ['data-auto-replace-svg', 'autoReplaceSvg'], ['data-auto-add-css', 'autoAddCss'], ['data-auto-a11y', 'autoA11y'], ['data-search-pseudo-elements', 'searchPseudoElements'], ['data-observe-mutations', 'observeMutations'], ['data-mutate-approach', 'mutateApproach'], ['data-keep-original-source', 'keepOriginalSource'], ['data-measure-performance', 'measurePerformance'], ['data-show-missing-icons', 'showMissingIcons']];
-    attrs.forEach(function (_ref) {
-      var _ref2 = _slicedToArray(_ref, 2),
-          attr = _ref2[0],
-          key = _ref2[1];
+    var attrs = [
+      ['data-family-prefix', 'familyPrefix'], ['data-style-default', 'styleDefault'],
+      ['data-replacement-class', 'replacementClass'], ['data-auto-replace-svg', 'autoReplaceSvg'],
+      ['data-auto-add-css', 'autoAddCss'], ['data-auto-a11y', 'autoA11y'],
+      ['data-search-pseudo-elements', 'searchPseudoElements'],
+      ['data-observe-mutations', 'observeMutations'], ['data-mutate-approach', 'mutateApproach'],
+      ['data-keep-original-source', 'keepOriginalSource'],
+      ['data-measure-performance', 'measurePerformance'],
+      ['data-show-missing-icons', 'showMissingIcons']
+    ];
+    attrs.forEach(function(_ref) {
+      var _ref2 = _slicedToArray(_ref, 2), attr = _ref2[0], key = _ref2[1];
 
       var val = coerce(getAttrConfig(attr));
 
@@ -329,13 +399,13 @@ var cydj = (function (exports) {
 
   if (!_config.autoReplaceSvg) _config.observeMutations = false;
   var config = {};
-  Object.keys(_config).forEach(function (key) {
+  Object.keys(_config).forEach(function(key) {
     Object.defineProperty(config, key, {
       enumerable: true,
       set: function set(val) {
         _config[key] = val;
 
-        _onChangeCb.forEach(function (cb) {
+        _onChangeCb.forEach(function(cb) {
           return cb(config);
         });
       },
@@ -349,20 +419,13 @@ var cydj = (function (exports) {
   function onChange(cb) {
     _onChangeCb.push(cb);
 
-    return function () {
+    return function() {
       _onChangeCb.splice(_onChangeCb.indexOf(cb), 1);
     };
   }
 
   var d = UNITS_IN_GRID;
-  var meaninglessTransform = {
-    size: 16,
-    x: 0,
-    y: 0,
-    rotate: 0,
-    flipX: false,
-    flipY: false
-  };
+  var meaninglessTransform = {size: 16, x: 0, y: 0, rotate: 0, flipX: false, flipY: false};
   function insertCss(css) {
     if (!css || !IS_DOM) {
       return;
@@ -410,73 +473,80 @@ var cydj = (function (exports) {
     if (node.classList) {
       return toArray(node.classList);
     } else {
-      return (node.getAttribute('class') || '').split(' ').filter(function (i) {
+      return (node.getAttribute('class') || '').split(' ').filter(function(i) {
         return i;
       });
     }
   }
   function htmlEscape(str) {
-    return "".concat(str).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return ''.concat(str)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
   }
   function joinAttributes(attributes) {
-    return Object.keys(attributes || {}).reduce(function (acc, attributeName) {
-      return acc + "".concat(attributeName, "=\"").concat(htmlEscape(attributes[attributeName]), "\" ");
-    }, '').trim();
+    return Object.keys(attributes || {})
+        .reduce(
+            function(acc, attributeName) {
+              return acc +
+                  ''.concat(attributeName, '="')
+                      .concat(htmlEscape(attributes[attributeName]), '" ');
+            },
+            '')
+        .trim();
   }
   function joinStyles(styles) {
-    return Object.keys(styles || {}).reduce(function (acc, styleName) {
-      return acc + "".concat(styleName, ": ").concat(styles[styleName].trim(), ";");
+    return Object.keys(styles || {}).reduce(function(acc, styleName) {
+      return acc + ''.concat(styleName, ': ').concat(styles[styleName].trim(), ';');
     }, '');
   }
   function transformIsMeaningful(transform) {
-    return transform.size !== meaninglessTransform.size || transform.x !== meaninglessTransform.x || transform.y !== meaninglessTransform.y || transform.rotate !== meaninglessTransform.rotate || transform.flipX || transform.flipY;
+    return transform.size !== meaninglessTransform.size || transform.x !== meaninglessTransform.x ||
+        transform.y !== meaninglessTransform.y ||
+        transform.rotate !== meaninglessTransform.rotate || transform.flipX || transform.flipY;
   }
   function transformForSvg(_ref) {
-    var transform = _ref.transform,
-        containerWidth = _ref.containerWidth,
+    var transform = _ref.transform, containerWidth = _ref.containerWidth,
         iconWidth = _ref.iconWidth;
-    var outer = {
-      transform: "translate(".concat(containerWidth / 2, " 256)")
-    };
-    var innerTranslate = "translate(".concat(transform.x * 32, ", ").concat(transform.y * 32, ") ");
-    var innerScale = "scale(".concat(transform.size / 16 * (transform.flipX ? -1 : 1), ", ").concat(transform.size / 16 * (transform.flipY ? -1 : 1), ") ");
-    var innerRotate = "rotate(".concat(transform.rotate, " 0 0)");
+    var outer = {transform: 'translate('.concat(containerWidth / 2, ' 256)')};
+    var innerTranslate = 'translate('.concat(transform.x * 32, ', ').concat(transform.y * 32, ') ');
+    var innerScale = 'scale('.concat(transform.size / 16 * (transform.flipX ? -1 : 1), ', ')
+                         .concat(transform.size / 16 * (transform.flipY ? -1 : 1), ') ');
+    var innerRotate = 'rotate('.concat(transform.rotate, ' 0 0)');
     var inner = {
-      transform: "".concat(innerTranslate, " ").concat(innerScale, " ").concat(innerRotate)
+      transform: ''.concat(innerTranslate, ' ').concat(innerScale, ' ').concat(innerRotate)
     };
-    var path = {
-      transform: "translate(".concat(iconWidth / 2 * -1, " -256)")
-    };
-    return {
-      outer: outer,
-      inner: inner,
-      path: path
-    };
+    var path = {transform: 'translate('.concat(iconWidth / 2 * -1, ' -256)')};
+    return {outer: outer, inner: inner, path: path};
   }
   function transformForCss(_ref2) {
-    var transform = _ref2.transform,
-        _ref2$width = _ref2.width,
-        width = _ref2$width === void 0 ? UNITS_IN_GRID : _ref2$width,
-        _ref2$height = _ref2.height,
+    var transform = _ref2.transform, _ref2$width = _ref2.width,
+        width = _ref2$width === void 0 ? UNITS_IN_GRID : _ref2$width, _ref2$height = _ref2.height,
         height = _ref2$height === void 0 ? UNITS_IN_GRID : _ref2$height,
         _ref2$startCentered = _ref2.startCentered,
         startCentered = _ref2$startCentered === void 0 ? false : _ref2$startCentered;
     var val = '';
 
     if (startCentered && IS_IE) {
-      val += "translate(".concat(transform.x / d - width / 2, "em, ").concat(transform.y / d - height / 2, "em) ");
+      val += 'translate('.concat(transform.x / d - width / 2, 'em, ')
+                 .concat(transform.y / d - height / 2, 'em) ');
     } else if (startCentered) {
-      val += "translate(calc(-50% + ".concat(transform.x / d, "em), calc(-50% + ").concat(transform.y / d, "em)) ");
+      val += 'translate(calc(-50% + '.concat(transform.x / d, 'em), calc(-50% + ')
+                 .concat(transform.y / d, 'em)) ');
     } else {
-      val += "translate(".concat(transform.x / d, "em, ").concat(transform.y / d, "em) ");
+      val += 'translate('.concat(transform.x / d, 'em, ').concat(transform.y / d, 'em) ');
     }
 
-    val += "scale(".concat(transform.size / d * (transform.flipX ? -1 : 1), ", ").concat(transform.size / d * (transform.flipY ? -1 : 1), ") ");
-    val += "rotate(".concat(transform.rotate, "deg) ");
+    val += 'scale('.concat(transform.size / d * (transform.flipX ? -1 : 1), ', ')
+               .concat(transform.size / d * (transform.flipY ? -1 : 1), ') ');
+    val += 'rotate('.concat(transform.rotate, 'deg) ');
     return val;
   }
 
-  var baseStyles = ":root, :host {\n  --fa-font-solid: normal 900 1em/1 \"Font Awesome 6 Solid\";\n  --fa-font-regular: normal 400 1em/1 \"Font Awesome 6 Regular\";\n  --fa-font-light: normal 300 1em/1 \"Font Awesome 6 Light\";\n  --fa-font-thin: normal 100 1em/1 \"Font Awesome 6 Thin\";\n  --fa-font-duotone: normal 900 1em/1 \"Font Awesome 6 Duotone\";\n  --fa-font-brands: normal 400 1em/1 \"Font Awesome 6 Brands\";\n}\n\nsvg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {\n  overflow: visible;\n  box-sizing: content-box;\n}\n\n.svg-inline--fa {\n  display: var(--fa-display, inline-block);\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n}\n.svg-inline--fa.fa-2xs {\n  vertical-align: 0.1em;\n}\n.svg-inline--fa.fa-xs {\n  vertical-align: 0em;\n}\n.svg-inline--fa.fa-sm {\n  vertical-align: -0.0714285705em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.2em;\n}\n.svg-inline--fa.fa-xl {\n  vertical-align: -0.25em;\n}\n.svg-inline--fa.fa-2xl {\n  vertical-align: -0.3125em;\n}\n.svg-inline--fa.fa-pull-left {\n  margin-right: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-pull-right {\n  margin-left: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-li {\n  width: var(--fa-li-width, 2em);\n  top: 0.25em;\n}\n.svg-inline--fa.fa-fw {\n  width: var(--fa-fw-width, 1.25em);\n}\n\n.fa-layers svg.svg-inline--fa {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: 1em;\n}\n.fa-layers svg.svg-inline--fa {\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: var(--fa-counter-background-color, #ff253a);\n  border-radius: var(--fa-counter-border-radius, 1em);\n  box-sizing: border-box;\n  color: var(--fa-inverse, #fff);\n  line-height: var(--fa-counter-line-height, 1);\n  max-width: var(--fa-counter-max-width, 5em);\n  min-width: var(--fa-counter-min-width, 1.5em);\n  overflow: hidden;\n  padding: var(--fa-counter-padding, 0.25em 0.5em);\n  right: var(--fa-right, 0);\n  text-overflow: ellipsis;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-counter-scale, 0.25));\n          transform: scale(var(--fa-counter-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: var(--fa-bottom, 0);\n  right: var(--fa-right, 0);\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom right;\n          transform-origin: bottom right;\n}\n\n.fa-layers-bottom-left {\n  bottom: var(--fa-bottom, 0);\n  left: var(--fa-left, 0);\n  right: auto;\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom left;\n          transform-origin: bottom left;\n}\n\n.fa-layers-top-right {\n  top: var(--fa-top, 0);\n  right: var(--fa-right, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-top-left {\n  left: var(--fa-left, 0);\n  right: auto;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top left;\n          transform-origin: top left;\n}\n\n.fa-1x {\n  font-size: 1em;\n}\n\n.fa-2x {\n  font-size: 2em;\n}\n\n.fa-3x {\n  font-size: 3em;\n}\n\n.fa-4x {\n  font-size: 4em;\n}\n\n.fa-5x {\n  font-size: 5em;\n}\n\n.fa-6x {\n  font-size: 6em;\n}\n\n.fa-7x {\n  font-size: 7em;\n}\n\n.fa-8x {\n  font-size: 8em;\n}\n\n.fa-9x {\n  font-size: 9em;\n}\n\n.fa-10x {\n  font-size: 10em;\n}\n\n.fa-2xs {\n  font-size: 0.625em;\n  line-height: 0.1em;\n  vertical-align: 0.225em;\n}\n\n.fa-xs {\n  font-size: 0.75em;\n  line-height: 0.0833333337em;\n  vertical-align: 0.125em;\n}\n\n.fa-sm {\n  font-size: 0.875em;\n  line-height: 0.0714285718em;\n  vertical-align: 0.0535714295em;\n}\n\n.fa-lg {\n  font-size: 1.25em;\n  line-height: 0.05em;\n  vertical-align: -0.075em;\n}\n\n.fa-xl {\n  font-size: 1.5em;\n  line-height: 0.0416666682em;\n  vertical-align: -0.125em;\n}\n\n.fa-2xl {\n  font-size: 2em;\n  line-height: 0.03125em;\n  vertical-align: -0.1875em;\n}\n\n.fa-fw {\n  text-align: center;\n  width: 1.25em;\n}\n\n.fa-ul {\n  list-style-type: none;\n  margin-left: var(--fa-li-margin, 2.5em);\n  padding-left: 0;\n}\n.fa-ul > li {\n  position: relative;\n}\n\n.fa-li {\n  left: calc(var(--fa-li-width, 2em) * -1);\n  position: absolute;\n  text-align: center;\n  width: var(--fa-li-width, 2em);\n  line-height: inherit;\n}\n\n.fa-border {\n  border-color: var(--fa-border-color, #eee);\n  border-radius: var(--fa-border-radius, 0.1em);\n  border-style: var(--fa-border-style, solid);\n  border-width: var(--fa-border-width, 0.08em);\n  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);\n}\n\n.fa-pull-left {\n  float: left;\n  margin-right: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-pull-right {\n  float: right;\n  margin-left: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-beat {\n  -webkit-animation-name: fa-beat;\n          animation-name: fa-beat;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-bounce {\n  -webkit-animation-name: fa-bounce;\n          animation-name: fa-bounce;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n}\n\n.fa-fade {\n  -webkit-animation-name: fa-fade;\n          animation-name: fa-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-beat-fade {\n  -webkit-animation-name: fa-beat-fade;\n          animation-name: fa-beat-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-flip {\n  -webkit-animation-name: fa-flip;\n          animation-name: fa-flip;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-shake {\n  -webkit-animation-name: fa-shake;\n          animation-name: fa-shake;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 2s);\n          animation-duration: var(--fa-animation-duration, 2s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin-reverse {\n  --fa-animation-direction: reverse;\n}\n\n.fa-pulse,\n.fa-spin-pulse {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));\n          animation-timing-function: var(--fa-animation-timing, steps(8));\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .fa-beat,\n.fa-bounce,\n.fa-fade,\n.fa-beat-fade,\n.fa-flip,\n.fa-pulse,\n.fa-shake,\n.fa-spin,\n.fa-spin-pulse {\n    -webkit-animation-delay: -1ms;\n            animation-delay: -1ms;\n    -webkit-animation-duration: 1ms;\n            animation-duration: 1ms;\n    -webkit-animation-iteration-count: 1;\n            animation-iteration-count: 1;\n    transition-delay: 0s;\n    transition-duration: 0s;\n  }\n}\n@-webkit-keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@-webkit-keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@-webkit-keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@-webkit-keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@-webkit-keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@-webkit-keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.fa-rotate-90 {\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\n\n.fa-rotate-180 {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n\n.fa-rotate-270 {\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\n\n.fa-flip-horizontal {\n  -webkit-transform: scale(-1, 1);\n          transform: scale(-1, 1);\n}\n\n.fa-flip-vertical {\n  -webkit-transform: scale(1, -1);\n          transform: scale(1, -1);\n}\n\n.fa-flip-both,\n.fa-flip-horizontal.fa-flip-vertical {\n  -webkit-transform: scale(-1, -1);\n          transform: scale(-1, -1);\n}\n\n.fa-rotate-by {\n  -webkit-transform: rotate(var(--fa-rotate-angle, none));\n          transform: rotate(var(--fa-rotate-angle, none));\n}\n\n.fa-stack {\n  display: inline-block;\n  vertical-align: middle;\n  height: 2em;\n  position: relative;\n  width: 2.5em;\n}\n\n.fa-stack-1x,\n.fa-stack-2x {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n  z-index: var(--fa-stack-z-index, auto);\n}\n\n.svg-inline--fa.fa-stack-1x {\n  height: 1em;\n  width: 1.25em;\n}\n.svg-inline--fa.fa-stack-2x {\n  height: 2em;\n  width: 2.5em;\n}\n\n.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}\n\n.sr-only,\n.fa-sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.sr-only-focusable:not(:focus),\n.fa-sr-only-focusable:not(:focus) {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.svg-inline--fa .fa-primary {\n  fill: var(--fa-primary-color, currentColor);\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa .fa-secondary {\n  fill: var(--fa-secondary-color, currentColor);\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-primary {\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-secondary {\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa mask .fa-primary,\n.svg-inline--fa mask .fa-secondary {\n  fill: black;\n}\n\n.fad.fa-inverse,\n.fa-duotone.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}";
+  var baseStyles =
+      ':root, :host {\n  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";\n  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";\n  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";\n  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";\n  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";\n  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";\n}\n\nsvg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {\n  overflow: visible;\n  box-sizing: content-box;\n}\n\n.svg-inline--fa {\n  display: var(--fa-display, inline-block);\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n}\n.svg-inline--fa.fa-2xs {\n  vertical-align: 0.1em;\n}\n.svg-inline--fa.fa-xs {\n  vertical-align: 0em;\n}\n.svg-inline--fa.fa-sm {\n  vertical-align: -0.0714285705em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.2em;\n}\n.svg-inline--fa.fa-xl {\n  vertical-align: -0.25em;\n}\n.svg-inline--fa.fa-2xl {\n  vertical-align: -0.3125em;\n}\n.svg-inline--fa.fa-pull-left {\n  margin-right: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-pull-right {\n  margin-left: var(--fa-pull-margin, 0.3em);\n  width: auto;\n}\n.svg-inline--fa.fa-li {\n  width: var(--fa-li-width, 2em);\n  top: 0.25em;\n}\n.svg-inline--fa.fa-fw {\n  width: var(--fa-fw-width, 1.25em);\n}\n\n.fa-layers svg.svg-inline--fa {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: 1em;\n}\n.fa-layers svg.svg-inline--fa {\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  -webkit-transform-origin: center center;\n          transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: var(--fa-counter-background-color, #ff253a);\n  border-radius: var(--fa-counter-border-radius, 1em);\n  box-sizing: border-box;\n  color: var(--fa-inverse, #fff);\n  line-height: var(--fa-counter-line-height, 1);\n  max-width: var(--fa-counter-max-width, 5em);\n  min-width: var(--fa-counter-min-width, 1.5em);\n  overflow: hidden;\n  padding: var(--fa-counter-padding, 0.25em 0.5em);\n  right: var(--fa-right, 0);\n  text-overflow: ellipsis;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-counter-scale, 0.25));\n          transform: scale(var(--fa-counter-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: var(--fa-bottom, 0);\n  right: var(--fa-right, 0);\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom right;\n          transform-origin: bottom right;\n}\n\n.fa-layers-bottom-left {\n  bottom: var(--fa-bottom, 0);\n  left: var(--fa-left, 0);\n  right: auto;\n  top: auto;\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: bottom left;\n          transform-origin: bottom left;\n}\n\n.fa-layers-top-right {\n  top: var(--fa-top, 0);\n  right: var(--fa-right, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top right;\n          transform-origin: top right;\n}\n\n.fa-layers-top-left {\n  left: var(--fa-left, 0);\n  right: auto;\n  top: var(--fa-top, 0);\n  -webkit-transform: scale(var(--fa-layers-scale, 0.25));\n          transform: scale(var(--fa-layers-scale, 0.25));\n  -webkit-transform-origin: top left;\n          transform-origin: top left;\n}\n\n.fa-1x {\n  font-size: 1em;\n}\n\n.fa-2x {\n  font-size: 2em;\n}\n\n.fa-3x {\n  font-size: 3em;\n}\n\n.fa-4x {\n  font-size: 4em;\n}\n\n.fa-5x {\n  font-size: 5em;\n}\n\n.fa-6x {\n  font-size: 6em;\n}\n\n.fa-7x {\n  font-size: 7em;\n}\n\n.fa-8x {\n  font-size: 8em;\n}\n\n.fa-9x {\n  font-size: 9em;\n}\n\n.fa-10x {\n  font-size: 10em;\n}\n\n.fa-2xs {\n  font-size: 0.625em;\n  line-height: 0.1em;\n  vertical-align: 0.225em;\n}\n\n.fa-xs {\n  font-size: 0.75em;\n  line-height: 0.0833333337em;\n  vertical-align: 0.125em;\n}\n\n.fa-sm {\n  font-size: 0.875em;\n  line-height: 0.0714285718em;\n  vertical-align: 0.0535714295em;\n}\n\n.fa-lg {\n  font-size: 1.25em;\n  line-height: 0.05em;\n  vertical-align: -0.075em;\n}\n\n.fa-xl {\n  font-size: 1.5em;\n  line-height: 0.0416666682em;\n  vertical-align: -0.125em;\n}\n\n.fa-2xl {\n  font-size: 2em;\n  line-height: 0.03125em;\n  vertical-align: -0.1875em;\n}\n\n.fa-fw {\n  text-align: center;\n  width: 1.25em;\n}\n\n.fa-ul {\n  list-style-type: none;\n  margin-left: var(--fa-li-margin, 2.5em);\n  padding-left: 0;\n}\n.fa-ul > li {\n  position: relative;\n}\n\n.fa-li {\n  left: calc(var(--fa-li-width, 2em) * -1);\n  position: absolute;\n  text-align: center;\n  width: var(--fa-li-width, 2em);\n  line-height: inherit;\n}\n\n.fa-border {\n  border-color: var(--fa-border-color, #eee);\n  border-radius: var(--fa-border-radius, 0.1em);\n  border-style: var(--fa-border-style, solid);\n  border-width: var(--fa-border-width, 0.08em);\n  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);\n}\n\n.fa-pull-left {\n  float: left;\n  margin-right: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-pull-right {\n  float: right;\n  margin-left: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-beat {\n  -webkit-animation-name: fa-beat;\n          animation-name: fa-beat;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-bounce {\n  -webkit-animation-name: fa-bounce;\n          animation-name: fa-bounce;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n}\n\n.fa-fade {\n  -webkit-animation-name: fa-fade;\n          animation-name: fa-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-beat-fade {\n  -webkit-animation-name: fa-beat-fade;\n          animation-name: fa-beat-fade;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));\n}\n\n.fa-flip {\n  -webkit-animation-name: fa-flip;\n          animation-name: fa-flip;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);\n          animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-shake {\n  -webkit-animation-name: fa-shake;\n          animation-name: fa-shake;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-delay: var(--fa-animation-delay, 0);\n          animation-delay: var(--fa-animation-delay, 0);\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 2s);\n          animation-duration: var(--fa-animation-duration, 2s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, linear);\n          animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin-reverse {\n  --fa-animation-direction: reverse;\n}\n\n.fa-pulse,\n.fa-spin-pulse {\n  -webkit-animation-name: fa-spin;\n          animation-name: fa-spin;\n  -webkit-animation-direction: var(--fa-animation-direction, normal);\n          animation-direction: var(--fa-animation-direction, normal);\n  -webkit-animation-duration: var(--fa-animation-duration, 1s);\n          animation-duration: var(--fa-animation-duration, 1s);\n  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n          animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));\n          animation-timing-function: var(--fa-animation-timing, steps(8));\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .fa-beat,\n.fa-bounce,\n.fa-fade,\n.fa-beat-fade,\n.fa-flip,\n.fa-pulse,\n.fa-shake,\n.fa-spin,\n.fa-spin-pulse {\n    -webkit-animation-delay: -1ms;\n            animation-delay: -1ms;\n    -webkit-animation-duration: 1ms;\n            animation-duration: 1ms;\n    -webkit-animation-iteration-count: 1;\n            animation-iteration-count: 1;\n    transition-delay: 0s;\n    transition-duration: 0s;\n  }\n}\n@-webkit-keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@keyframes fa-beat {\n  0%, 90% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  45% {\n    -webkit-transform: scale(var(--fa-beat-scale, 1.25));\n            transform: scale(var(--fa-beat-scale, 1.25));\n  }\n}\n@-webkit-keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@keyframes fa-bounce {\n  0% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  10% {\n    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);\n  }\n  30% {\n    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));\n  }\n  50% {\n    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);\n  }\n  57% {\n    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));\n  }\n  64% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n  100% {\n    -webkit-transform: scale(1, 1) translateY(0);\n            transform: scale(1, 1) translateY(0);\n  }\n}\n@-webkit-keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@keyframes fa-fade {\n  50% {\n    opacity: var(--fa-fade-opacity, 0.4);\n  }\n}\n@-webkit-keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@keyframes fa-beat-fade {\n  0%, 100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    -webkit-transform: scale(1);\n            transform: scale(1);\n  }\n  50% {\n    opacity: 1;\n    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));\n            transform: scale(var(--fa-beat-fade-scale, 1.125));\n  }\n}\n@-webkit-keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@keyframes fa-flip {\n  50% {\n    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));\n  }\n}\n@-webkit-keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@keyframes fa-shake {\n  0% {\n    -webkit-transform: rotate(-15deg);\n            transform: rotate(-15deg);\n  }\n  4% {\n    -webkit-transform: rotate(15deg);\n            transform: rotate(15deg);\n  }\n  8%, 24% {\n    -webkit-transform: rotate(-18deg);\n            transform: rotate(-18deg);\n  }\n  12%, 28% {\n    -webkit-transform: rotate(18deg);\n            transform: rotate(18deg);\n  }\n  16% {\n    -webkit-transform: rotate(-22deg);\n            transform: rotate(-22deg);\n  }\n  20% {\n    -webkit-transform: rotate(22deg);\n            transform: rotate(22deg);\n  }\n  32% {\n    -webkit-transform: rotate(-12deg);\n            transform: rotate(-12deg);\n  }\n  36% {\n    -webkit-transform: rotate(12deg);\n            transform: rotate(12deg);\n  }\n  40%, 100% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n  }\n}\n.fa-rotate-90 {\n  -webkit-transform: rotate(90deg);\n          transform: rotate(90deg);\n}\n\n.fa-rotate-180 {\n  -webkit-transform: rotate(180deg);\n          transform: rotate(180deg);\n}\n\n.fa-rotate-270 {\n  -webkit-transform: rotate(270deg);\n          transform: rotate(270deg);\n}\n\n.fa-flip-horizontal {\n  -webkit-transform: scale(-1, 1);\n          transform: scale(-1, 1);\n}\n\n.fa-flip-vertical {\n  -webkit-transform: scale(1, -1);\n          transform: scale(1, -1);\n}\n\n.fa-flip-both,\n.fa-flip-horizontal.fa-flip-vertical {\n  -webkit-transform: scale(-1, -1);\n          transform: scale(-1, -1);\n}\n\n.fa-rotate-by {\n  -webkit-transform: rotate(var(--fa-rotate-angle, none));\n          transform: rotate(var(--fa-rotate-angle, none));\n}\n\n.fa-stack {\n  display: inline-block;\n  vertical-align: middle;\n  height: 2em;\n  position: relative;\n  width: 2.5em;\n}\n\n.fa-stack-1x,\n.fa-stack-2x {\n  bottom: 0;\n  left: 0;\n  margin: auto;\n  position: absolute;\n  right: 0;\n  top: 0;\n  z-index: var(--fa-stack-z-index, auto);\n}\n\n.svg-inline--fa.fa-stack-1x {\n  height: 1em;\n  width: 1.25em;\n}\n.svg-inline--fa.fa-stack-2x {\n  height: 2em;\n  width: 2.5em;\n}\n\n.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}\n\n.sr-only,\n.fa-sr-only {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.sr-only-focusable:not(:focus),\n.fa-sr-only-focusable:not(:focus) {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  white-space: nowrap;\n  border-width: 0;\n}\n\n.svg-inline--fa .fa-primary {\n  fill: var(--fa-primary-color, currentColor);\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa .fa-secondary {\n  fill: var(--fa-secondary-color, currentColor);\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-primary {\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-secondary {\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa mask .fa-primary,\n.svg-inline--fa mask .fa-secondary {\n  fill: black;\n}\n\n.fad.fa-inverse,\n.fa-duotone.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}';
 
   function css() {
     var dfp = DEFAULT_FAMILY_PREFIX;
@@ -486,10 +556,12 @@ var cydj = (function (exports) {
     var s = baseStyles;
 
     if (fp !== dfp || rc !== drc) {
-      var dPatt = new RegExp("\\.".concat(dfp, "\\-"), 'g');
-      var customPropPatt = new RegExp("\\--".concat(dfp, "\\-"), 'g');
-      var rPatt = new RegExp("\\.".concat(drc), 'g');
-      s = s.replace(dPatt, ".".concat(fp, "-")).replace(customPropPatt, "--".concat(fp, "-")).replace(rPatt, ".".concat(rc));
+      var dPatt = new RegExp('\\.'.concat(dfp, '\\-'), 'g');
+      var customPropPatt = new RegExp('\\--'.concat(dfp, '\\-'), 'g');
+      var rPatt = new RegExp('\\.'.concat(drc), 'g');
+      s = s.replace(dPatt, '.'.concat(fp, '-'))
+              .replace(customPropPatt, '--'.concat(fp, '-'))
+              .replace(rPatt, '.'.concat(rc));
     }
 
     return s;
@@ -506,12 +578,7 @@ var cydj = (function (exports) {
 
   var InjectCSS = {
     mixout: function mixout() {
-      return {
-        dom: {
-          css: css,
-          insertCss: ensureCss
-        }
-      };
+      return {dom: {css: css, insertCss: ensureCss}};
     },
     hooks: function hooks() {
       return {
@@ -537,7 +604,7 @@ var cydj = (function (exports) {
   var listener = function listener() {
     DOCUMENT.removeEventListener('DOMContentLoaded', listener);
     loaded = 1;
-    functions.map(function (fn) {
+    functions.map(function(fn) {
       return fn();
     });
   };
@@ -545,18 +612,18 @@ var cydj = (function (exports) {
   var loaded = false;
 
   if (IS_DOM) {
-    loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.readyState);
+    loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/)
+                 .test(DOCUMENT.readyState);
     if (!loaded) DOCUMENT.addEventListener('DOMContentLoaded', listener);
   }
 
-  function domready (fn) {
+  function domready(fn) {
     if (!IS_DOM) return;
     loaded ? setTimeout(fn, 0) : functions.push(fn);
   }
 
   function toHtml(abstractNodes) {
-    var tag = abstractNodes.tag,
-        _abstractNodes$attrib = abstractNodes.attributes,
+    var tag = abstractNodes.tag, _abstractNodes$attrib = abstractNodes.attributes,
         attributes = _abstractNodes$attrib === void 0 ? {} : _abstractNodes$attrib,
         _abstractNodes$childr = abstractNodes.children,
         children = _abstractNodes$childr === void 0 ? [] : _abstractNodes$childr;
@@ -564,17 +631,16 @@ var cydj = (function (exports) {
     if (typeof abstractNodes === 'string') {
       return htmlEscape(abstractNodes);
     } else {
-      return "<".concat(tag, " ").concat(joinAttributes(attributes), ">").concat(children.map(toHtml).join(''), "</").concat(tag, ">");
+      return '<'.concat(tag, ' ')
+          .concat(joinAttributes(attributes), '>')
+          .concat(children.map(toHtml).join(''), '</')
+          .concat(tag, '>');
     }
   }
 
   function iconFromMapping(mapping, prefix, iconName) {
     if (mapping && mapping[prefix] && mapping[prefix][iconName]) {
-      return {
-        prefix: prefix,
-        iconName: iconName,
-        icon: mapping[prefix][iconName]
-      };
+      return {prefix: prefix, iconName: iconName, icon: mapping[prefix][iconName]};
     }
   }
 
@@ -584,7 +650,7 @@ var cydj = (function (exports) {
    */
 
   var bindInternal4 = function bindInternal4(func, thisContext) {
-    return function (a, b, c, d) {
+    return function(a, b, c, d) {
       return func.call(thisContext, a, b, c, d);
     };
   };
@@ -603,12 +669,8 @@ var cydj = (function (exports) {
 
 
   var reduce = function fastReduceObject(subject, fn, initialValue, thisContext) {
-    var keys = Object.keys(subject),
-        length = keys.length,
-        iterator = thisContext !== undefined ? bindInternal4(fn, thisContext) : fn,
-        i,
-        key,
-        result;
+    var keys = Object.keys(subject), length = keys.length,
+        iterator = thisContext !== undefined ? bindInternal4(fn, thisContext) : fn, i, key, result;
 
     if (initialValue === undefined) {
       i = 1;
@@ -697,7 +759,7 @@ var cydj = (function (exports) {
   }
 
   function normalizeIcons(icons) {
-    return Object.keys(icons).reduce(function (acc, iconName) {
+    return Object.keys(icons).reduce(function(acc, iconName) {
       var icon = icons[iconName];
       var expanded = !!icon.icon;
 
@@ -720,7 +782,8 @@ var cydj = (function (exports) {
     if (typeof namespace.hooks.addPack === 'function' && !skipHooks) {
       namespace.hooks.addPack(prefix, normalizeIcons(icons));
     } else {
-      namespace.styles[prefix] = _objectSpread2(_objectSpread2({}, namespace.styles[prefix] || {}), normalized);
+      namespace.styles[prefix] =
+          _objectSpread2(_objectSpread2({}, namespace.styles[prefix] || {}), normalized);
     }
     /**
      * Font Awesome 4 used the prefix of `fa` for all icons. With the introduction
@@ -735,8 +798,7 @@ var cydj = (function (exports) {
     }
   }
 
-  var styles = namespace.styles,
-      shims = namespace.shims;
+  var styles = namespace.styles, shims = namespace.shims;
   var LONG_STYLE = Object.values(PREFIX_TO_LONG_STYLE);
   var _defaultUsablePrefix = null;
   var _byUnicode = {};
@@ -763,54 +825,54 @@ var cydj = (function (exports) {
   }
   var build = function build() {
     var lookup = function lookup(reducer) {
-      return reduce(styles, function (o, style, prefix) {
+      return reduce(styles, function(o, style, prefix) {
         o[prefix] = reduce(style, reducer, {});
         return o;
       }, {});
     };
 
-    _byUnicode = lookup(function (acc, icon, iconName) {
+    _byUnicode = lookup(function(acc, icon, iconName) {
       if (icon[3]) {
         acc[icon[3]] = iconName;
       }
 
       if (icon[2]) {
-        var aliases = icon[2].filter(function (a) {
+        var aliases = icon[2].filter(function(a) {
           return typeof a === 'number';
         });
-        aliases.forEach(function (alias) {
+        aliases.forEach(function(alias) {
           acc[alias.toString(16)] = iconName;
         });
       }
 
       return acc;
     });
-    _byLigature = lookup(function (acc, icon, iconName) {
+    _byLigature = lookup(function(acc, icon, iconName) {
       acc[iconName] = iconName;
 
       if (icon[2]) {
-        var aliases = icon[2].filter(function (a) {
+        var aliases = icon[2].filter(function(a) {
           return typeof a === 'string';
         });
-        aliases.forEach(function (alias) {
+        aliases.forEach(function(alias) {
           acc[alias] = iconName;
         });
       }
 
       return acc;
     });
-    _byAlias = lookup(function (acc, icon, iconName) {
+    _byAlias = lookup(function(acc, icon, iconName) {
       var aliases = icon[2];
       acc[iconName] = iconName;
-      aliases.forEach(function (alias) {
+      aliases.forEach(function(alias) {
         acc[alias] = iconName;
       });
       return acc;
-    }); // If we have a Kit, we can't determine if regular is available since we
+    });  // If we have a Kit, we can't determine if regular is available since we
     // could be auto-fetching it. We'll have to assume that it is available.
 
     var hasRegular = 'far' in styles || config.autoFetchSvg;
-    var shimLookups = reduce(shims, function (acc, shim) {
+    var shimLookups = reduce(shims, function(acc, shim) {
       var maybeNameMaybeUnicode = shim[0];
       var prefix = shim[1];
       var iconName = shim[2];
@@ -820,29 +882,20 @@ var cydj = (function (exports) {
       }
 
       if (typeof maybeNameMaybeUnicode === 'string') {
-        acc.names[maybeNameMaybeUnicode] = {
-          prefix: prefix,
-          iconName: iconName
-        };
+        acc.names[maybeNameMaybeUnicode] = {prefix: prefix, iconName: iconName};
       }
 
       if (typeof maybeNameMaybeUnicode === 'number') {
-        acc.unicodes[maybeNameMaybeUnicode.toString(16)] = {
-          prefix: prefix,
-          iconName: iconName
-        };
+        acc.unicodes[maybeNameMaybeUnicode.toString(16)] = {prefix: prefix, iconName: iconName};
       }
 
       return acc;
-    }, {
-      names: {},
-      unicodes: {}
-    });
+    }, {names: {}, unicodes: {}});
     _byOldName = shimLookups.names;
     _byOldUnicode = shimLookups.unicodes;
     _defaultUsablePrefix = getCanonicalPrefix(config.styleDefault);
   };
-  onChange(function (c) {
+  onChange(function(c) {
     _defaultUsablePrefix = getCanonicalPrefix(c.styleDefault);
   });
   build();
@@ -856,31 +909,19 @@ var cydj = (function (exports) {
     return (_byAlias[prefix] || {})[alias];
   }
   function byOldName(name) {
-    return _byOldName[name] || {
-      prefix: null,
-      iconName: null
-    };
+    return _byOldName[name] || {prefix: null, iconName: null};
   }
   function byOldUnicode(unicode) {
     var oldUnicode = _byOldUnicode[unicode];
     var newUnicode = byUnicode('fas', unicode);
-    return oldUnicode || (newUnicode ? {
-      prefix: 'fas',
-      iconName: newUnicode
-    } : null) || {
-      prefix: null,
-      iconName: null
-    };
+    return oldUnicode || (newUnicode ? {prefix: 'fas', iconName: newUnicode} : null) ||
+        {prefix: null, iconName: null};
   }
   function getDefaultUsablePrefix() {
     return _defaultUsablePrefix;
   }
   var emptyCanonicalIcon = function emptyCanonicalIcon() {
-    return {
-      prefix: null,
-      iconName: null,
-      rest: []
-    };
+    return {prefix: null, iconName: null, rest: []};
   };
   function getCanonicalPrefix(styleOrPrefix) {
     var style = PREFIX_TO_STYLE[styleOrPrefix];
@@ -893,7 +934,7 @@ var cydj = (function (exports) {
     var _params$skipLookups = params.skipLookups,
         skipLookups = _params$skipLookups === void 0 ? false : _params$skipLookups;
     var givenPrefix = null;
-    var canonical = values.reduce(function (acc, cls) {
+    var canonical = values.reduce(function(acc, cls) {
       var iconName = getIconName(config.familyPrefix, cls);
 
       if (styles[cls]) {
@@ -939,63 +980,67 @@ var cydj = (function (exports) {
     return canonical;
   }
 
-  var Library = /*#__PURE__*/function () {
+  var Library = /*#__PURE__*/ function() {
     function Library() {
       _classCallCheck(this, Library);
 
       this.definitions = {};
     }
 
-    _createClass(Library, [{
-      key: "add",
-      value: function add() {
-        var _this = this;
+    _createClass(Library, [
+      {
+        key: 'add',
+        value: function add() {
+          var _this = this;
 
-        for (var _len = arguments.length, definitions = new Array(_len), _key = 0; _key < _len; _key++) {
-          definitions[_key] = arguments[_key];
-        }
-
-        var additions = definitions.reduce(this._pullDefinitions, {});
-        Object.keys(additions).forEach(function (key) {
-          _this.definitions[key] = _objectSpread2(_objectSpread2({}, _this.definitions[key] || {}), additions[key]);
-          defineIcons(key, additions[key]);
-          var longPrefix = PREFIX_TO_LONG_STYLE[key];
-          if (longPrefix) defineIcons(longPrefix, additions[key]);
-          build();
-        });
-      }
-    }, {
-      key: "reset",
-      value: function reset() {
-        this.definitions = {};
-      }
-    }, {
-      key: "_pullDefinitions",
-      value: function _pullDefinitions(additions, definition) {
-        var normalized = definition.prefix && definition.iconName && definition.icon ? {
-          0: definition
-        } : definition;
-        Object.keys(normalized).map(function (key) {
-          var _normalized$key = normalized[key],
-              prefix = _normalized$key.prefix,
-              iconName = _normalized$key.iconName,
-              icon = _normalized$key.icon;
-          var aliases = icon[2];
-          if (!additions[prefix]) additions[prefix] = {};
-
-          if (aliases.length > 0) {
-            aliases.forEach(function (alias) {
-              if (typeof alias === 'string') {
-                additions[prefix][alias] = icon;
-              }
-            });
+          for (var _len = arguments.length, definitions = new Array(_len), _key = 0; _key < _len;
+               _key++) {
+            definitions[_key] = arguments[_key];
           }
 
-          additions[prefix][iconName] = icon;
-        });
-        return additions;
+          var additions = definitions.reduce(this._pullDefinitions, {});
+          Object.keys(additions).forEach(function(key) {
+            _this.definitions[key] =
+                _objectSpread2(_objectSpread2({}, _this.definitions[key] || {}), additions[key]);
+            defineIcons(key, additions[key]);
+            var longPrefix = PREFIX_TO_LONG_STYLE[key];
+            if (longPrefix) defineIcons(longPrefix, additions[key]);
+            build();
+          });
+        }
+      },
+      {
+        key: 'reset',
+        value: function reset() {
+          this.definitions = {};
+        }
+      },
+      {
+        key: '_pullDefinitions',
+        value: function _pullDefinitions(additions, definition) {
+          var normalized = definition.prefix && definition.iconName && definition.icon ?
+              {0: definition} :
+              definition;
+          Object.keys(normalized).map(function(key) {
+            var _normalized$key = normalized[key], prefix = _normalized$key.prefix,
+                iconName = _normalized$key.iconName, icon = _normalized$key.icon;
+            var aliases = icon[2];
+            if (!additions[prefix]) additions[prefix] = {};
+
+            if (aliases.length > 0) {
+              aliases.forEach(function(alias) {
+                if (typeof alias === 'string') {
+                  additions[prefix][alias] = icon;
+                }
+              });
+            }
+
+            additions[prefix][iconName] = icon;
+          });
+          return additions;
+        }
       }
-    }]);
+    ]);
 
     return Library;
   }();
@@ -1008,21 +1053,21 @@ var cydj = (function (exports) {
     var obj = _ref.mixoutsTo;
     _plugins = nextPlugins;
     _hooks = {};
-    Object.keys(providers).forEach(function (k) {
+    Object.keys(providers).forEach(function(k) {
       if (defaultProviderKeys.indexOf(k) === -1) {
         delete providers[k];
       }
     });
 
-    _plugins.forEach(function (plugin) {
+    _plugins.forEach(function(plugin) {
       var mixout = plugin.mixout ? plugin.mixout() : {};
-      Object.keys(mixout).forEach(function (tk) {
+      Object.keys(mixout).forEach(function(tk) {
         if (typeof mixout[tk] === 'function') {
           obj[tk] = mixout[tk];
         }
 
         if (_typeof(mixout[tk]) === 'object') {
-          Object.keys(mixout[tk]).forEach(function (sk) {
+          Object.keys(mixout[tk]).forEach(function(sk) {
             if (!obj[tk]) {
               obj[tk] = {};
             }
@@ -1034,7 +1079,7 @@ var cydj = (function (exports) {
 
       if (plugin.hooks) {
         var hooks = plugin.hooks();
-        Object.keys(hooks).forEach(function (hook) {
+        Object.keys(hooks).forEach(function(hook) {
           if (!_hooks[hook]) {
             _hooks[hook] = [];
           }
@@ -1051,23 +1096,26 @@ var cydj = (function (exports) {
     return obj;
   }
   function chainHooks(hook, accumulator) {
-    for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2;
+         _key < _len; _key++) {
       args[_key - 2] = arguments[_key];
     }
 
     var hookFns = _hooks[hook] || [];
-    hookFns.forEach(function (hookFn) {
-      accumulator = hookFn.apply(null, [accumulator].concat(args)); // eslint-disable-line no-useless-call
+    hookFns.forEach(function(hookFn) {
+      accumulator =
+          hookFn.apply(null, [accumulator].concat(args));  // eslint-disable-line no-useless-call
     });
     return accumulator;
   }
   function callHooks(hook) {
-    for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+    for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1;
+         _key2 < _len2; _key2++) {
       args[_key2 - 1] = arguments[_key2];
     }
 
     var hookFns = _hooks[hook] || [];
-    hookFns.forEach(function (hookFn) {
+    hookFns.forEach(function(hookFn) {
       hookFn.apply(null, args);
     });
     return undefined;
@@ -1087,7 +1135,8 @@ var cydj = (function (exports) {
     var prefix = iconLookup.prefix || getDefaultUsablePrefix();
     if (!iconName) return;
     iconName = byAlias(prefix, iconName) || iconName;
-    return iconFromMapping(library.definitions, prefix, iconName) || iconFromMapping(namespace.styles, prefix, iconName);
+    return iconFromMapping(library.definitions, prefix, iconName) ||
+        iconFromMapping(namespace.styles, prefix, iconName);
   }
   var library = new Library();
   var noAuto = function noAuto() {
@@ -1116,10 +1165,8 @@ var cydj = (function (exports) {
       }
 
       config.observeMutations = true;
-      domready(function () {
-        autoReplace({
-          autoReplaceSvgRoot: autoReplaceSvgRoot
-        });
+      domready(function() {
+        autoReplace({autoReplaceSvgRoot: autoReplaceSvgRoot});
         callHooks('watch', params);
       });
     }
@@ -1140,16 +1187,13 @@ var cydj = (function (exports) {
       if (Array.isArray(_icon) && _icon.length === 2) {
         var iconName = _icon[1].indexOf('fa-') === 0 ? _icon[1].slice(3) : _icon[1];
         var prefix = getCanonicalPrefix(_icon[0]);
-        return {
-          prefix: prefix,
-          iconName: byAlias(prefix, iconName) || iconName
-        };
+        return {prefix: prefix, iconName: byAlias(prefix, iconName) || iconName};
       }
 
-      if (typeof _icon === 'string' && (_icon.indexOf("".concat(config.familyPrefix, "-")) > -1 || _icon.match(ICON_SELECTION_SYNTAX_PATTERN))) {
-        var canonicalIcon = getCanonicalIcon(_icon.split(' '), {
-          skipLookups: true
-        });
+      if (typeof _icon === 'string' &&
+          (_icon.indexOf(''.concat(config.familyPrefix, '-')) > -1 ||
+           _icon.match(ICON_SELECTION_SYNTAX_PATTERN))) {
+        var canonicalIcon = getCanonicalIcon(_icon.split(' '), {skipLookups: true});
         return {
           prefix: canonicalIcon.prefix || getDefaultUsablePrefix(),
           iconName: byAlias(canonicalIcon.prefix, canonicalIcon.iconName) || canonicalIcon.iconName
@@ -1159,10 +1203,7 @@ var cydj = (function (exports) {
       if (typeof _icon === 'string') {
         var _prefix = getDefaultUsablePrefix();
 
-        return {
-          prefix: _prefix,
-          iconName: byAlias(_prefix, _icon) || _icon
-        };
+        return {prefix: _prefix, iconName: byAlias(_prefix, _icon) || _icon};
       }
     }
   };
@@ -1180,18 +1221,16 @@ var cydj = (function (exports) {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
     var _params$autoReplaceSv = params.autoReplaceSvgRoot,
         autoReplaceSvgRoot = _params$autoReplaceSv === void 0 ? DOCUMENT : _params$autoReplaceSv;
-    if ((Object.keys(namespace.styles).length > 0 || config.autoFetchSvg) && IS_DOM && config.autoReplaceSvg) api.dom.i2svg({
-      node: autoReplaceSvgRoot
-    });
+    if ((Object.keys(namespace.styles).length > 0 || config.autoFetchSvg) && IS_DOM &&
+        config.autoReplaceSvg)
+      api.dom.i2svg({node: autoReplaceSvgRoot});
   };
 
   function domVariants(val, abstractCreator) {
-    Object.defineProperty(val, 'abstract', {
-      get: abstractCreator
-    });
+    Object.defineProperty(val, 'abstract', {get: abstractCreator});
     Object.defineProperty(val, 'html', {
       get: function get() {
-        return val.abstract.map(function (a) {
+        return val.abstract.map(function(a) {
           return toHtml(a);
         });
       }
@@ -1207,80 +1246,62 @@ var cydj = (function (exports) {
     return val;
   }
 
-  function asIcon (_ref) {
-    var children = _ref.children,
-        main = _ref.main,
-        mask = _ref.mask,
-        attributes = _ref.attributes,
-        styles = _ref.styles,
-        transform = _ref.transform;
+  function asIcon(_ref) {
+    var children = _ref.children, main = _ref.main, mask = _ref.mask, attributes = _ref.attributes,
+        styles = _ref.styles, transform = _ref.transform;
 
     if (transformIsMeaningful(transform) && main.found && !mask.found) {
-      var width = main.width,
-          height = main.height;
-      var offset = {
-        x: width / height / 2,
-        y: 0.5
-      };
+      var width = main.width, height = main.height;
+      var offset = {x: width / height / 2, y: 0.5};
       attributes['style'] = joinStyles(_objectSpread2(_objectSpread2({}, styles), {}, {
-        'transform-origin': "".concat(offset.x + transform.x / 16, "em ").concat(offset.y + transform.y / 16, "em")
+        'transform-origin':
+            ''.concat(offset.x + transform.x / 16, 'em ').concat(offset.y + transform.y / 16, 'em')
       }));
     }
 
-    return [{
-      tag: 'svg',
-      attributes: attributes,
-      children: children
-    }];
+    return [{tag: 'svg', attributes: attributes, children: children}];
   }
 
-  function asSymbol (_ref) {
-    var prefix = _ref.prefix,
-        iconName = _ref.iconName,
-        children = _ref.children,
-        attributes = _ref.attributes,
-        symbol = _ref.symbol;
-    var id = symbol === true ? "".concat(prefix, "-").concat(config.familyPrefix, "-").concat(iconName) : symbol;
+  function asSymbol(_ref) {
+    var prefix = _ref.prefix, iconName = _ref.iconName, children = _ref.children,
+        attributes = _ref.attributes, symbol = _ref.symbol;
+    var id = symbol === true ?
+        ''.concat(prefix, '-').concat(config.familyPrefix, '-').concat(iconName) :
+        symbol;
     return [{
       tag: 'svg',
-      attributes: {
-        style: 'display: none;'
-      },
+      attributes: {style: 'display: none;'},
       children: [{
         tag: 'symbol',
-        attributes: _objectSpread2(_objectSpread2({}, attributes), {}, {
-          id: id
-        }),
+        attributes: _objectSpread2(_objectSpread2({}, attributes), {}, {id: id}),
         children: children
       }]
     }];
   }
 
   function makeInlineSvgAbstract(params) {
-    var _params$icons = params.icons,
-        main = _params$icons.main,
-        mask = _params$icons.mask,
-        prefix = params.prefix,
-        iconName = params.iconName,
-        transform = params.transform,
-        symbol = params.symbol,
-        title = params.title,
-        maskId = params.maskId,
-        titleId = params.titleId,
-        extra = params.extra,
-        _params$watchable = params.watchable,
+    var _params$icons = params.icons, main = _params$icons.main, mask = _params$icons.mask,
+        prefix = params.prefix, iconName = params.iconName, transform = params.transform,
+        symbol = params.symbol, title = params.title, maskId = params.maskId,
+        titleId = params.titleId, extra = params.extra, _params$watchable = params.watchable,
         watchable = _params$watchable === void 0 ? false : _params$watchable;
 
-    var _ref = mask.found ? mask : main,
-        width = _ref.width,
-        height = _ref.height;
+    var _ref = mask.found ? mask : main, width = _ref.width, height = _ref.height;
 
     var isUploadedIcon = prefix === 'fak';
-    var attrClass = [config.replacementClass, iconName ? "".concat(config.familyPrefix, "-").concat(iconName) : ''].filter(function (c) {
-      return extra.classes.indexOf(c) === -1;
-    }).filter(function (c) {
-      return c !== '' || !!c;
-    }).concat(extra.classes).join(' ');
+    var attrClass =
+        [
+          config.replacementClass,
+          iconName ? ''.concat(config.familyPrefix, '-').concat(iconName) : ''
+        ]
+            .filter(function(c) {
+              return extra.classes.indexOf(c) === -1;
+            })
+            .filter(function(c) {
+              return c !== '' || !!c;
+            })
+            .concat(extra.classes)
+            .join(' ');
     var content = {
       children: [],
       attributes: _objectSpread2(_objectSpread2({}, extra.attributes), {}, {
@@ -1289,12 +1310,12 @@ var cydj = (function (exports) {
         'class': attrClass,
         'role': extra.attributes.role || 'img',
         'xmlns': 'http://www.w3.org/2000/svg',
-        'viewBox': "0 0 ".concat(width, " ").concat(height)
+        'viewBox': '0 0 '.concat(width, ' ').concat(height)
       })
     };
-    var uploadedIconWidthStyle = isUploadedIcon && !~extra.classes.indexOf('fa-fw') ? {
-      width: "".concat(width / height * 16 * 0.0625, "em")
-    } : {};
+    var uploadedIconWidthStyle = isUploadedIcon && !~extra.classes.indexOf('fa-fw') ?
+        {width: ''.concat(width / height * 16 * 0.0625, 'em')} :
+        {};
 
     if (watchable) {
       content.attributes[DATA_FA_I2SVG] = '';
@@ -1304,7 +1325,7 @@ var cydj = (function (exports) {
       content.children.push({
         tag: 'title',
         attributes: {
-          id: content.attributes['aria-labelledby'] || "title-".concat(titleId || nextUniqueId())
+          id: content.attributes['aria-labelledby'] || 'title-'.concat(titleId || nextUniqueId())
         },
         children: [title]
       });
@@ -1322,15 +1343,10 @@ var cydj = (function (exports) {
       styles: _objectSpread2(_objectSpread2({}, uploadedIconWidthStyle), extra.styles)
     });
 
-    var _ref2 = mask.found && main.found ? callProvided('generateAbstractMask', args) || {
-      children: [],
-      attributes: {}
-    } : callProvided('generateAbstractIcon', args) || {
-      children: [],
-      attributes: {}
-    },
-        children = _ref2.children,
-        attributes = _ref2.attributes;
+    var _ref2 = mask.found && main.found ?
+        callProvided('generateAbstractMask', args) || {children: [], attributes: {}} :
+        callProvided('generateAbstractIcon', args) || {children: [], attributes: {}},
+        children = _ref2.children, attributes = _ref2.attributes;
 
     args.children = children;
     args.attributes = attributes;
@@ -1342,20 +1358,14 @@ var cydj = (function (exports) {
     }
   }
   function makeLayersTextAbstract(params) {
-    var content = params.content,
-        width = params.width,
-        height = params.height,
-        transform = params.transform,
-        title = params.title,
-        extra = params.extra,
+    var content = params.content, width = params.width, height = params.height,
+        transform = params.transform, title = params.title, extra = params.extra,
         _params$watchable2 = params.watchable,
         watchable = _params$watchable2 === void 0 ? false : _params$watchable2;
 
-    var attributes = _objectSpread2(_objectSpread2(_objectSpread2({}, extra.attributes), title ? {
-      'title': title
-    } : {}), {}, {
-      'class': extra.classes.join(' ')
-    });
+    var attributes = _objectSpread2(
+        _objectSpread2(_objectSpread2({}, extra.attributes), title ? {'title': title} : {}), {},
+        {'class': extra.classes.join(' ')});
 
     if (watchable) {
       attributes[DATA_FA_I2SVG] = '';
@@ -1364,12 +1374,8 @@ var cydj = (function (exports) {
     var styles = _objectSpread2({}, extra.styles);
 
     if (transformIsMeaningful(transform)) {
-      styles['transform'] = transformForCss({
-        transform: transform,
-        startCentered: true,
-        width: width,
-        height: height
-      });
+      styles['transform'] = transformForCss(
+          {transform: transform, startCentered: true, width: width, height: height});
       styles['-webkit-transform'] = styles['transform'];
     }
 
@@ -1380,34 +1386,20 @@ var cydj = (function (exports) {
     }
 
     var val = [];
-    val.push({
-      tag: 'span',
-      attributes: attributes,
-      children: [content]
-    });
+    val.push({tag: 'span', attributes: attributes, children: [content]});
 
     if (title) {
-      val.push({
-        tag: 'span',
-        attributes: {
-          class: 'sr-only'
-        },
-        children: [title]
-      });
+      val.push({tag: 'span', attributes: {class: 'sr-only'}, children: [title]});
     }
 
     return val;
   }
   function makeLayersCounterAbstract(params) {
-    var content = params.content,
-        title = params.title,
-        extra = params.extra;
+    var content = params.content, title = params.title, extra = params.extra;
 
-    var attributes = _objectSpread2(_objectSpread2(_objectSpread2({}, extra.attributes), title ? {
-      'title': title
-    } : {}), {}, {
-      'class': extra.classes.join(' ')
-    });
+    var attributes = _objectSpread2(
+        _objectSpread2(_objectSpread2({}, extra.attributes), title ? {'title': title} : {}), {},
+        {'class': extra.classes.join(' ')});
 
     var styleString = joinStyles(extra.styles);
 
@@ -1416,20 +1408,10 @@ var cydj = (function (exports) {
     }
 
     var val = [];
-    val.push({
-      tag: 'span',
-      attributes: attributes,
-      children: [content]
-    });
+    val.push({tag: 'span', attributes: attributes, children: [content]});
 
     if (title) {
-      val.push({
-        tag: 'span',
-        attributes: {
-          class: 'sr-only'
-        },
-        children: [title]
-      });
+      val.push({tag: 'span', attributes: {class: 'sr-only'}, children: [title]});
     }
 
     return val;
@@ -1440,8 +1422,7 @@ var cydj = (function (exports) {
     var width = icon[0];
     var height = icon[1];
 
-    var _icon$slice = icon.slice(4),
-        _icon$slice2 = _slicedToArray(_icon$slice, 1),
+    var _icon$slice = icon.slice(4), _icon$slice2 = _slicedToArray(_icon$slice, 1),
         vectorData = _icon$slice2[0];
 
     var element = null;
@@ -1449,51 +1430,38 @@ var cydj = (function (exports) {
     if (Array.isArray(vectorData)) {
       element = {
         tag: 'g',
-        attributes: {
-          class: "".concat(config.familyPrefix, "-").concat(DUOTONE_CLASSES.GROUP)
-        },
-        children: [{
-          tag: 'path',
-          attributes: {
-            class: "".concat(config.familyPrefix, "-").concat(DUOTONE_CLASSES.SECONDARY),
-            fill: 'currentColor',
-            d: vectorData[0]
+        attributes: {class: ''.concat(config.familyPrefix, '-').concat(DUOTONE_CLASSES.GROUP)},
+        children: [
+          {
+            tag: 'path',
+            attributes: {
+              class: ''.concat(config.familyPrefix, '-').concat(DUOTONE_CLASSES.SECONDARY),
+              fill: 'currentColor',
+              d: vectorData[0]
+            }
+          },
+          {
+            tag: 'path',
+            attributes: {
+              class: ''.concat(config.familyPrefix, '-').concat(DUOTONE_CLASSES.PRIMARY),
+              fill: 'currentColor',
+              d: vectorData[1]
+            }
           }
-        }, {
-          tag: 'path',
-          attributes: {
-            class: "".concat(config.familyPrefix, "-").concat(DUOTONE_CLASSES.PRIMARY),
-            fill: 'currentColor',
-            d: vectorData[1]
-          }
-        }]
+        ]
       };
     } else {
-      element = {
-        tag: 'path',
-        attributes: {
-          fill: 'currentColor',
-          d: vectorData
-        }
-      };
+      element = {tag: 'path', attributes: {fill: 'currentColor', d: vectorData}};
     }
 
-    return {
-      found: true,
-      width: width,
-      height: height,
-      icon: element
-    };
+    return {found: true, width: width, height: height, icon: element};
   }
-  var missingIconResolutionMixin = {
-    found: false,
-    width: 512,
-    height: 512
-  };
+  var missingIconResolutionMixin = {found: false, width: 512, height: 512};
 
   function maybeNotifyMissing(iconName, prefix) {
     if (!PRODUCTION && !config.showMissingIcons && iconName) {
-      console.error("Icon with name \"".concat(iconName, "\" and prefix \"").concat(prefix, "\" is missing."));
+      console.error(
+          'Icon with name "'.concat(iconName, '" and prefix "').concat(prefix, '" is missing.'));
     }
   }
 
@@ -1504,13 +1472,8 @@ var cydj = (function (exports) {
       prefix = getDefaultUsablePrefix();
     }
 
-    return new Promise(function (resolve, reject) {
-      ({
-        found: false,
-        width: 512,
-        height: 512,
-        icon: callProvided('missingIconAbstract') || {}
-      });
+    return new Promise(function(resolve, reject) {
+      ({found: false, width: 512, height: 512, icon: callProvided('missingIconAbstract') || {}});
 
       if (givenPrefix === 'fa') {
         var shim = byOldName(iconName) || {};
@@ -1532,28 +1495,26 @@ var cydj = (function (exports) {
 
   var noop$1 = function noop() {};
 
-  var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : {
-    mark: noop$1,
-    measure: noop$1
-  };
-  var preamble = "FA \"6.0.0\"";
+  var p = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ?
+      PERFORMANCE :
+      {mark: noop$1, measure: noop$1};
+  var preamble = 'FA "6.0.0"';
 
   var begin = function begin(name) {
-    p.mark("".concat(preamble, " ").concat(name, " begins"));
-    return function () {
+    p.mark(''.concat(preamble, ' ').concat(name, ' begins'));
+    return function() {
       return end(name);
     };
   };
 
   var end = function end(name) {
-    p.mark("".concat(preamble, " ").concat(name, " ends"));
-    p.measure("".concat(preamble, " ").concat(name), "".concat(preamble, " ").concat(name, " begins"), "".concat(preamble, " ").concat(name, " ends"));
+    p.mark(''.concat(preamble, ' ').concat(name, ' ends'));
+    p.measure(
+        ''.concat(preamble, ' ').concat(name), ''.concat(preamble, ' ').concat(name, ' begins'),
+        ''.concat(preamble, ' ').concat(name, ' ends'));
   };
 
-  var perf = {
-    begin: begin,
-    end: end
-  };
+  var perf = {begin: begin, end: end};
 
   var noop$2 = function noop() {};
 
@@ -1569,7 +1530,8 @@ var cydj = (function (exports) {
   }
 
   function hasBeenReplaced(node) {
-    return node && node.classList && node.classList.contains && node.classList.contains(config.replacementClass);
+    return node && node.classList && node.classList.contains &&
+        node.classList.contains(config.replacementClass);
   }
 
   function getMutator() {
@@ -1592,30 +1554,30 @@ var cydj = (function (exports) {
   function convertSVG(abstractObj) {
     var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var _params$ceFn = params.ceFn,
-        ceFn = _params$ceFn === void 0 ? abstractObj.tag === 'svg' ? createElementNS : createElement : _params$ceFn;
+        ceFn = _params$ceFn === void 0 ?
+        abstractObj.tag === 'svg' ? createElementNS : createElement :
+        _params$ceFn;
 
     if (typeof abstractObj === 'string') {
       return DOCUMENT.createTextNode(abstractObj);
     }
 
     var tag = ceFn(abstractObj.tag);
-    Object.keys(abstractObj.attributes || []).forEach(function (key) {
+    Object.keys(abstractObj.attributes || []).forEach(function(key) {
       tag.setAttribute(key, abstractObj.attributes[key]);
     });
     var children = abstractObj.children || [];
-    children.forEach(function (child) {
-      tag.appendChild(convertSVG(child, {
-        ceFn: ceFn
-      }));
+    children.forEach(function(child) {
+      tag.appendChild(convertSVG(child, {ceFn: ceFn}));
     });
     return tag;
   }
 
   function nodeAsComment(node) {
-    var comment = " ".concat(node.outerHTML, " ");
+    var comment = ' '.concat(node.outerHTML, ' ');
     /* BEGIN.ATTRIBUTION */
 
-    comment = "".concat(comment, "Font Awesome fontawesome.com ");
+    comment = ''.concat(comment, 'Font Awesome fontawesome.com ');
     /* END.ATTRIBUTION */
 
     return comment;
@@ -1626,7 +1588,7 @@ var cydj = (function (exports) {
       var node = mutation[0];
 
       if (node.parentNode) {
-        mutation[1].forEach(function (abstract) {
+        mutation[1].forEach(function(abstract) {
           node.parentNode.insertBefore(convertSVG(abstract), node);
         });
 
@@ -1640,18 +1602,19 @@ var cydj = (function (exports) {
     },
     nest: function nest(mutation) {
       var node = mutation[0];
-      var abstract = mutation[1]; // If we already have a replaced node we do not want to continue nesting within it.
+      var abstract = mutation[1];  // If we already have a replaced node we do not want to continue
+                                   // nesting within it.
       // Short-circuit to the standard replacement
 
       if (~classArray(node).indexOf(config.replacementClass)) {
         return mutators.replace(mutation);
       }
 
-      var forSvg = new RegExp("".concat(config.familyPrefix, "-.*"));
+      var forSvg = new RegExp(''.concat(config.familyPrefix, '-.*'));
       delete abstract[0].attributes.id;
 
       if (abstract[0].attributes.class) {
-        var splitClasses = abstract[0].attributes.class.split(' ').reduce(function (acc, cls) {
+        var splitClasses = abstract[0].attributes.class.split(' ').reduce(function(acc, cls) {
           if (cls === config.replacementClass || cls.match(forSvg)) {
             acc.toSvg.push(cls);
           } else {
@@ -1659,10 +1622,7 @@ var cydj = (function (exports) {
           }
 
           return acc;
-        }, {
-          toNode: [],
-          toSvg: []
-        });
+        }, {toNode: [], toSvg: []});
         abstract[0].attributes.class = splitClasses.toSvg.join(' ');
 
         if (splitClasses.toNode.length === 0) {
@@ -1696,7 +1656,7 @@ var cydj = (function (exports) {
         frame = WINDOW.requestAnimationFrame || performOperationSync;
       }
 
-      frame(function () {
+      frame(function() {
         var mutator = getMutator();
         var mark = perf.begin('mutate');
         mutations.map(mutator);
@@ -1730,11 +1690,12 @@ var cydj = (function (exports) {
         pseudoElementsCallback = _options$pseudoElemen === void 0 ? noop$2 : _options$pseudoElemen,
         _options$observeMutat = options.observeMutationsRoot,
         observeMutationsRoot = _options$observeMutat === void 0 ? DOCUMENT : _options$observeMutat;
-    mo = new MUTATION_OBSERVER(function (objects) {
+    mo = new MUTATION_OBSERVER(function(objects) {
       if (disabled) return;
       var defaultPrefix = getDefaultUsablePrefix();
-      toArray(objects).forEach(function (mutationRecord) {
-        if (mutationRecord.type === 'childList' && mutationRecord.addedNodes.length > 0 && !isWatched(mutationRecord.addedNodes[0])) {
+      toArray(objects).forEach(function(mutationRecord) {
+        if (mutationRecord.type === 'childList' && mutationRecord.addedNodes.length > 0 &&
+            !isWatched(mutationRecord.addedNodes[0])) {
           if (config.searchPseudoElements) {
             pseudoElementsCallback(mutationRecord.target);
           }
@@ -1742,15 +1703,16 @@ var cydj = (function (exports) {
           treeCallback(mutationRecord.target);
         }
 
-        if (mutationRecord.type === 'attributes' && mutationRecord.target.parentNode && config.searchPseudoElements) {
+        if (mutationRecord.type === 'attributes' && mutationRecord.target.parentNode &&
+            config.searchPseudoElements) {
           pseudoElementsCallback(mutationRecord.target.parentNode);
         }
 
-        if (mutationRecord.type === 'attributes' && isWatched(mutationRecord.target) && ~ATTRIBUTES_WATCHED_FOR_MUTATION.indexOf(mutationRecord.attributeName)) {
+        if (mutationRecord.type === 'attributes' && isWatched(mutationRecord.target) &&
+            ~ATTRIBUTES_WATCHED_FOR_MUTATION.indexOf(mutationRecord.attributeName)) {
           if (mutationRecord.attributeName === 'class' && hasPrefixAndIcon(mutationRecord.target)) {
             var _getCanonicalIcon = getCanonicalIcon(classArray(mutationRecord.target)),
-                prefix = _getCanonicalIcon.prefix,
-                iconName = _getCanonicalIcon.iconName;
+                prefix = _getCanonicalIcon.prefix, iconName = _getCanonicalIcon.iconName;
 
             mutationRecord.target.setAttribute(DATA_PREFIX, prefix || defaultPrefix);
             if (iconName) mutationRecord.target.setAttribute(DATA_ICON, iconName);
@@ -1761,24 +1723,21 @@ var cydj = (function (exports) {
       });
     });
     if (!IS_DOM) return;
-    mo.observe(observeMutationsRoot, {
-      childList: true,
-      attributes: true,
-      characterData: true,
-      subtree: true
-    });
+    mo.observe(
+        observeMutationsRoot,
+        {childList: true, attributes: true, characterData: true, subtree: true});
   }
   function disconnect() {
     if (!mo) return;
     mo.disconnect();
   }
 
-  function styleParser (node) {
+  function styleParser(node) {
     var style = node.getAttribute('style');
     var val = [];
 
     if (style) {
-      val = style.split(';').reduce(function (acc, style) {
+      val = style.split(';').reduce(function(acc, style) {
         var styles = style.split(':');
         var prop = styles[0];
         var value = styles.slice(1);
@@ -1794,7 +1753,7 @@ var cydj = (function (exports) {
     return val;
   }
 
-  function classParser (node) {
+  function classParser(node) {
     var existingPrefix = node.getAttribute('data-prefix');
     var existingIconName = node.getAttribute('data-icon');
     var innerText = node.innerText !== undefined ? node.innerText.trim() : '';
@@ -1814,14 +1773,15 @@ var cydj = (function (exports) {
     }
 
     if (val.prefix && innerText.length > 0) {
-      val.iconName = byLigature(val.prefix, node.innerText) || byUnicode(val.prefix, toHex(node.innerText));
+      val.iconName =
+          byLigature(val.prefix, node.innerText) || byUnicode(val.prefix, toHex(node.innerText));
     }
 
     return val;
   }
 
-  function attributesParser (node) {
-    var extraAttributes = toArray(node.attributes).reduce(function (acc, attr) {
+  function attributesParser(node) {
+    var extraAttributes = toArray(node.attributes).reduce(function(acc, attr) {
       if (acc.name !== 'class' && acc.name !== 'style') {
         acc[attr.name] = attr.value;
       }
@@ -1833,7 +1793,8 @@ var cydj = (function (exports) {
 
     if (config.autoA11y) {
       if (title) {
-        extraAttributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(titleId || nextUniqueId());
+        extraAttributes['aria-labelledby'] =
+            ''.concat(config.replacementClass, '-title-').concat(titleId || nextUniqueId());
       } else {
         extraAttributes['aria-hidden'] = 'true';
         extraAttributes['focusable'] = 'false';
@@ -1851,59 +1812,41 @@ var cydj = (function (exports) {
       prefix: null,
       transform: meaninglessTransform,
       symbol: false,
-      mask: {
-        iconName: null,
-        prefix: null,
-        rest: []
-      },
+      mask: {iconName: null, prefix: null, rest: []},
       maskId: null,
-      extra: {
-        classes: [],
-        styles: {},
-        attributes: {}
-      }
+      extra: {classes: [], styles: {}, attributes: {}}
     };
   }
   function parseMeta(node) {
-    var parser = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-      styleParser: true
-    };
+    var parser =
+        arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {styleParser: true};
 
-    var _classParser = classParser(node),
-        iconName = _classParser.iconName,
-        prefix = _classParser.prefix,
-        extraClasses = _classParser.rest;
+    var _classParser = classParser(node), iconName = _classParser.iconName,
+        prefix = _classParser.prefix, extraClasses = _classParser.rest;
 
     var extraAttributes = attributesParser(node);
     var pluginMeta = chainHooks('parseNodeAttributes', {}, node);
     var extraStyles = parser.styleParser ? styleParser(node) : [];
-    return _objectSpread2({
-      iconName: iconName,
-      title: node.getAttribute('title'),
-      titleId: node.getAttribute('data-fa-title-id'),
-      prefix: prefix,
-      transform: meaninglessTransform,
-      mask: {
-        iconName: null,
-        prefix: null,
-        rest: []
-      },
-      maskId: null,
-      symbol: false,
-      extra: {
-        classes: extraClasses,
-        styles: extraStyles,
-        attributes: extraAttributes
-      }
-    }, pluginMeta);
+    return _objectSpread2(
+        {
+          iconName: iconName,
+          title: node.getAttribute('title'),
+          titleId: node.getAttribute('data-fa-title-id'),
+          prefix: prefix,
+          transform: meaninglessTransform,
+          mask: {iconName: null, prefix: null, rest: []},
+          maskId: null,
+          symbol: false,
+          extra: {classes: extraClasses, styles: extraStyles, attributes: extraAttributes}
+        },
+        pluginMeta);
   }
 
   var styles$2 = namespace.styles;
 
   function generateMutation(node) {
-    var nodeMeta = config.autoReplaceSvg === 'nest' ? parseMeta(node, {
-      styleParser: false
-    }) : parseMeta(node);
+    var nodeMeta =
+        config.autoReplaceSvg === 'nest' ? parseMeta(node, {styleParser: false}) : parseMeta(node);
 
     if (~nodeMeta.extra.classes.indexOf(LAYERS_TEXT_CLASSNAME)) {
       return callProvided('generateLayersText', node, nodeMeta);
@@ -1918,17 +1861,19 @@ var cydj = (function (exports) {
     var htmlClassList = DOCUMENT.documentElement.classList;
 
     var hclAdd = function hclAdd(suffix) {
-      return htmlClassList.add("".concat(HTML_CLASS_I2SVG_BASE_CLASS, "-").concat(suffix));
+      return htmlClassList.add(''.concat(HTML_CLASS_I2SVG_BASE_CLASS, '-').concat(suffix));
     };
 
     var hclRemove = function hclRemove(suffix) {
-      return htmlClassList.remove("".concat(HTML_CLASS_I2SVG_BASE_CLASS, "-").concat(suffix));
+      return htmlClassList.remove(''.concat(HTML_CLASS_I2SVG_BASE_CLASS, '-').concat(suffix));
     };
 
     var prefixes = config.autoFetchSvg ? Object.keys(PREFIX_TO_STYLE) : Object.keys(styles$2);
-    var prefixesDomQuery = [".".concat(LAYERS_TEXT_CLASSNAME, ":not([").concat(DATA_FA_I2SVG, "])")].concat(prefixes.map(function (p) {
-      return ".".concat(p, ":not([").concat(DATA_FA_I2SVG, "])");
-    })).join(', ');
+    var prefixesDomQuery = ['.'.concat(LAYERS_TEXT_CLASSNAME, ':not([').concat(DATA_FA_I2SVG, '])')]
+                               .concat(prefixes.map(function(p) {
+                                 return '.'.concat(p, ':not([').concat(DATA_FA_I2SVG, '])');
+                               }))
+                               .join(', ');
 
     if (prefixesDomQuery.length === 0) {
       return Promise.resolve();
@@ -1938,7 +1883,7 @@ var cydj = (function (exports) {
 
     try {
       candidates = toArray(root.querySelectorAll(prefixesDomQuery));
-    } catch (e) {// noop
+    } catch (e) {  // noop
     }
 
     if (candidates.length > 0) {
@@ -1949,7 +1894,7 @@ var cydj = (function (exports) {
     }
 
     var mark = perf.begin('onTree');
-    var mutations = candidates.reduce(function (acc, node) {
+    var mutations = candidates.reduce(function(acc, node) {
       try {
         var mutation = generateMutation(node);
 
@@ -1966,26 +1911,28 @@ var cydj = (function (exports) {
 
       return acc;
     }, []);
-    return new Promise(function (resolve, reject) {
-      Promise.all(mutations).then(function (resolvedMutations) {
-        perform(resolvedMutations, function () {
-          hclAdd('active');
-          hclAdd('complete');
-          hclRemove('pending');
-          if (typeof callback === 'function') callback();
-          mark();
-          resolve();
-        });
-      }).catch(function (e) {
-        mark();
-        reject(e);
-      });
+    return new Promise(function(resolve, reject) {
+      Promise.all(mutations)
+          .then(function(resolvedMutations) {
+            perform(resolvedMutations, function() {
+              hclAdd('active');
+              hclAdd('complete');
+              hclRemove('pending');
+              if (typeof callback === 'function') callback();
+              mark();
+              resolve();
+            });
+          })
+          .catch(function(e) {
+            mark();
+            reject(e);
+          });
     });
   }
 
   function onNode(node) {
     var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-    generateMutation(node).then(function (mutation) {
+    generateMutation(node).then(function(mutation) {
       if (mutation) {
         perform([mutation], callback);
       }
@@ -1993,18 +1940,18 @@ var cydj = (function (exports) {
   }
 
   function resolveIcons(next) {
-    return function (maybeIconDefinition) {
+    return function(maybeIconDefinition) {
       var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var iconDefinition = (maybeIconDefinition || {}).icon ? maybeIconDefinition : findIconDefinition(maybeIconDefinition || {});
+      var iconDefinition = (maybeIconDefinition || {}).icon ?
+          maybeIconDefinition :
+          findIconDefinition(maybeIconDefinition || {});
       var mask = params.mask;
 
       if (mask) {
         mask = (mask || {}).icon ? mask : findIconDefinition(mask || {});
       }
 
-      return next(iconDefinition, _objectSpread2(_objectSpread2({}, params), {}, {
-        mask: mask
-      }));
+      return next(iconDefinition, _objectSpread2(_objectSpread2({}, params), {}, {mask: mask}));
     };
   }
 
@@ -2012,37 +1959,27 @@ var cydj = (function (exports) {
     var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var _params$transform = params.transform,
         transform = _params$transform === void 0 ? meaninglessTransform : _params$transform,
-        _params$symbol = params.symbol,
-        symbol = _params$symbol === void 0 ? false : _params$symbol,
-        _params$mask = params.mask,
-        mask = _params$mask === void 0 ? null : _params$mask,
-        _params$maskId = params.maskId,
-        maskId = _params$maskId === void 0 ? null : _params$maskId,
-        _params$title = params.title,
-        title = _params$title === void 0 ? null : _params$title,
+        _params$symbol = params.symbol, symbol = _params$symbol === void 0 ? false : _params$symbol,
+        _params$mask = params.mask, mask = _params$mask === void 0 ? null : _params$mask,
+        _params$maskId = params.maskId, maskId = _params$maskId === void 0 ? null : _params$maskId,
+        _params$title = params.title, title = _params$title === void 0 ? null : _params$title,
         _params$titleId = params.titleId,
         titleId = _params$titleId === void 0 ? null : _params$titleId,
         _params$classes = params.classes,
         classes = _params$classes === void 0 ? [] : _params$classes,
         _params$attributes = params.attributes,
         attributes = _params$attributes === void 0 ? {} : _params$attributes,
-        _params$styles = params.styles,
-        styles = _params$styles === void 0 ? {} : _params$styles;
+        _params$styles = params.styles, styles = _params$styles === void 0 ? {} : _params$styles;
     if (!iconDefinition) return;
-    var prefix = iconDefinition.prefix,
-        iconName = iconDefinition.iconName,
+    var prefix = iconDefinition.prefix, iconName = iconDefinition.iconName,
         icon = iconDefinition.icon;
-    return domVariants(_objectSpread2({
-      type: 'icon'
-    }, iconDefinition), function () {
-      callHooks('beforeDOMElementCreation', {
-        iconDefinition: iconDefinition,
-        params: params
-      });
+    return domVariants(_objectSpread2({type: 'icon'}, iconDefinition), function() {
+      callHooks('beforeDOMElementCreation', {iconDefinition: iconDefinition, params: params});
 
       if (config.autoA11y) {
         if (title) {
-          attributes['aria-labelledby'] = "".concat(config.replacementClass, "-title-").concat(titleId || nextUniqueId());
+          attributes['aria-labelledby'] =
+              ''.concat(config.replacementClass, '-title-').concat(titleId || nextUniqueId());
         } else {
           attributes['aria-hidden'] = 'true';
           attributes['focusable'] = 'false';
@@ -2052,12 +1989,7 @@ var cydj = (function (exports) {
       return makeInlineSvgAbstract({
         icons: {
           main: asFoundIcon(icon),
-          mask: mask ? asFoundIcon(mask.icon) : {
-            found: false,
-            width: null,
-            height: null,
-            icon: {}
-          }
+          mask: mask ? asFoundIcon(mask.icon) : {found: false, width: null, height: null, icon: {}}
         },
         prefix: prefix,
         iconName: iconName,
@@ -2066,19 +1998,13 @@ var cydj = (function (exports) {
         title: title,
         maskId: maskId,
         titleId: titleId,
-        extra: {
-          attributes: attributes,
-          styles: styles,
-          classes: classes
-        }
+        extra: {attributes: attributes, styles: styles, classes: classes}
       });
     });
   };
   var ReplaceElements = {
     mixout: function mixout() {
-      return {
-        icon: resolveIcons(render)
-      };
+      return {icon: resolveIcons(render)};
     },
     hooks: function hooks() {
       return {
@@ -2090,60 +2016,49 @@ var cydj = (function (exports) {
       };
     },
     provides: function provides(providers$$1) {
-      providers$$1.i2svg = function (params) {
-        var _params$node = params.node,
-            node = _params$node === void 0 ? DOCUMENT : _params$node,
+      providers$$1.i2svg = function(params) {
+        var _params$node = params.node, node = _params$node === void 0 ? DOCUMENT : _params$node,
             _params$callback = params.callback,
-            callback = _params$callback === void 0 ? function () {} : _params$callback;
+            callback = _params$callback === void 0 ? function() {} : _params$callback;
         return onTree(node, callback);
       };
 
-      providers$$1.generateSvgReplacementMutation = function (node, nodeMeta) {
-        var iconName = nodeMeta.iconName,
-            title = nodeMeta.title,
-            titleId = nodeMeta.titleId,
-            prefix = nodeMeta.prefix,
-            transform = nodeMeta.transform,
-            symbol = nodeMeta.symbol,
-            mask = nodeMeta.mask,
-            maskId = nodeMeta.maskId,
-            extra = nodeMeta.extra;
-        return new Promise(function (resolve, reject) {
-          Promise.all([findIcon(iconName, prefix), mask.iconName ? findIcon(mask.iconName, mask.prefix) : Promise.resolve({
-            found: false,
-            width: 512,
-            height: 512,
-            icon: {}
-          })]).then(function (_ref) {
-            var _ref2 = _slicedToArray(_ref, 2),
-                main = _ref2[0],
-                mask = _ref2[1];
+      providers$$1.generateSvgReplacementMutation = function(node, nodeMeta) {
+        var iconName = nodeMeta.iconName, title = nodeMeta.title, titleId = nodeMeta.titleId,
+            prefix = nodeMeta.prefix, transform = nodeMeta.transform, symbol = nodeMeta.symbol,
+            mask = nodeMeta.mask, maskId = nodeMeta.maskId, extra = nodeMeta.extra;
+        return new Promise(function(resolve, reject) {
+          Promise
+              .all([
+                findIcon(iconName, prefix),
+                mask.iconName ? findIcon(mask.iconName, mask.prefix) :
+                                Promise.resolve({found: false, width: 512, height: 512, icon: {}})
+              ])
+              .then(function(_ref) {
+                var _ref2 = _slicedToArray(_ref, 2), main = _ref2[0], mask = _ref2[1];
 
-            resolve([node, makeInlineSvgAbstract({
-              icons: {
-                main: main,
-                mask: mask
-              },
-              prefix: prefix,
-              iconName: iconName,
-              transform: transform,
-              symbol: symbol,
-              maskId: maskId,
-              title: title,
-              titleId: titleId,
-              extra: extra,
-              watchable: true
-            })]);
-          }).catch(reject);
+                resolve([
+                  node, makeInlineSvgAbstract({
+                    icons: {main: main, mask: mask},
+                    prefix: prefix,
+                    iconName: iconName,
+                    transform: transform,
+                    symbol: symbol,
+                    maskId: maskId,
+                    title: title,
+                    titleId: titleId,
+                    extra: extra,
+                    watchable: true
+                  })
+                ]);
+              })
+              .catch(reject);
         });
       };
 
-      providers$$1.generateAbstractIcon = function (_ref3) {
-        var children = _ref3.children,
-            attributes = _ref3.attributes,
-            main = _ref3.main,
-            transform = _ref3.transform,
-            styles = _ref3.styles;
+      providers$$1.generateAbstractIcon = function(_ref3) {
+        var children = _ref3.children, attributes = _ref3.attributes, main = _ref3.main,
+            transform = _ref3.transform, styles = _ref3.styles;
         var styleString = joinStyles(styles);
 
         if (styleString.length > 0) {
@@ -2162,10 +2077,7 @@ var cydj = (function (exports) {
         }
 
         children.push(nextChild || main.icon);
-        return {
-          children: children,
-          attributes: attributes
-        };
+        return {children: children, attributes: attributes};
       };
     }
   };
@@ -2177,23 +2089,21 @@ var cydj = (function (exports) {
           var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
           var _params$classes = params.classes,
               classes = _params$classes === void 0 ? [] : _params$classes;
-          return domVariants({
-            type: 'layer'
-          }, function () {
-            callHooks('beforeDOMElementCreation', {
-              assembler: assembler,
-              params: params
-            });
+          return domVariants({type: 'layer'}, function() {
+            callHooks('beforeDOMElementCreation', {assembler: assembler, params: params});
             var children = [];
-            assembler(function (args) {
-              Array.isArray(args) ? args.map(function (a) {
+            assembler(function(args) {
+              Array.isArray(args) ? args.map(function(a) {
                 children = children.concat(a.abstract);
-              }) : children = children.concat(args.abstract);
+              }) :
+                                    children = children.concat(args.abstract);
             });
             return [{
               tag: 'span',
               attributes: {
-                class: ["".concat(config.familyPrefix, "-layers")].concat(_toConsumableArray(classes)).join(' ')
+                class: [''.concat(config.familyPrefix, '-layers')]
+                           .concat(_toConsumableArray(classes))
+                           .join(' ')
               },
               children: children
             }];
@@ -2208,29 +2118,23 @@ var cydj = (function (exports) {
       return {
         counter: function counter(content) {
           var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-          var _params$title = params.title,
-              title = _params$title === void 0 ? null : _params$title,
+          var _params$title = params.title, title = _params$title === void 0 ? null : _params$title,
               _params$classes = params.classes,
               classes = _params$classes === void 0 ? [] : _params$classes,
               _params$attributes = params.attributes,
               attributes = _params$attributes === void 0 ? {} : _params$attributes,
               _params$styles = params.styles,
               styles = _params$styles === void 0 ? {} : _params$styles;
-          return domVariants({
-            type: 'counter',
-            content: content
-          }, function () {
-            callHooks('beforeDOMElementCreation', {
-              content: content,
-              params: params
-            });
+          return domVariants({type: 'counter', content: content}, function() {
+            callHooks('beforeDOMElementCreation', {content: content, params: params});
             return makeLayersCounterAbstract({
               content: content.toString(),
               title: title,
               extra: {
                 attributes: attributes,
                 styles: styles,
-                classes: ["".concat(config.familyPrefix, "-layers-counter")].concat(_toConsumableArray(classes))
+                classes: [''.concat(config.familyPrefix, '-layers-counter')].concat(
+                    _toConsumableArray(classes))
               }
             });
           });
@@ -2246,22 +2150,15 @@ var cydj = (function (exports) {
           var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
           var _params$transform = params.transform,
               transform = _params$transform === void 0 ? meaninglessTransform : _params$transform,
-              _params$title = params.title,
-              title = _params$title === void 0 ? null : _params$title,
+              _params$title = params.title, title = _params$title === void 0 ? null : _params$title,
               _params$classes = params.classes,
               classes = _params$classes === void 0 ? [] : _params$classes,
               _params$attributes = params.attributes,
               attributes = _params$attributes === void 0 ? {} : _params$attributes,
               _params$styles = params.styles,
               styles = _params$styles === void 0 ? {} : _params$styles;
-          return domVariants({
-            type: 'text',
-            content: content
-          }, function () {
-            callHooks('beforeDOMElementCreation', {
-              content: content,
-              params: params
-            });
+          return domVariants({type: 'text', content: content}, function() {
+            callHooks('beforeDOMElementCreation', {content: content, params: params});
             return makeLayersTextAbstract({
               content: content,
               transform: _objectSpread2(_objectSpread2({}, meaninglessTransform), transform),
@@ -2269,7 +2166,8 @@ var cydj = (function (exports) {
               extra: {
                 attributes: attributes,
                 styles: styles,
-                classes: ["".concat(config.familyPrefix, "-layers-text")].concat(_toConsumableArray(classes))
+                classes: [''.concat(config.familyPrefix, '-layers-text')].concat(
+                    _toConsumableArray(classes))
               }
             });
           });
@@ -2277,10 +2175,8 @@ var cydj = (function (exports) {
       };
     },
     provides: function provides(providers$$1) {
-      providers$$1.generateLayersText = function (node, nodeMeta) {
-        var title = nodeMeta.title,
-            transform = nodeMeta.transform,
-            extra = nodeMeta.extra;
+      providers$$1.generateLayersText = function(node, nodeMeta) {
+        var title = nodeMeta.title, transform = nodeMeta.transform, extra = nodeMeta.extra;
         var width = null;
         var height = null;
 
@@ -2295,25 +2191,28 @@ var cydj = (function (exports) {
           extra.attributes['aria-hidden'] = 'true';
         }
 
-        return Promise.resolve([node, makeLayersTextAbstract({
-          content: node.innerHTML,
-          width: width,
-          height: height,
-          transform: transform,
-          title: title,
-          extra: extra,
-          watchable: true
-        })]);
+        return Promise.resolve([
+          node, makeLayersTextAbstract({
+            content: node.innerHTML,
+            width: width,
+            height: height,
+            transform: transform,
+            title: title,
+            extra: extra,
+            watchable: true
+          })
+        ]);
       };
     }
   };
 
-  var CLEAN_CONTENT_PATTERN = new RegExp("\"", 'ug');
+  var CLEAN_CONTENT_PATTERN = new RegExp('"', 'ug');
   var SECONDARY_UNICODE_RANGE = [1105920, 1112319];
   function hexValueFromContent(content) {
     var cleaned = content.replace(CLEAN_CONTENT_PATTERN, '');
     var codePoint = codePointAt(cleaned, 0);
-    var isPrependTen = codePoint >= SECONDARY_UNICODE_RANGE[0] && codePoint <= SECONDARY_UNICODE_RANGE[1];
+    var isPrependTen =
+        codePoint >= SECONDARY_UNICODE_RANGE[0] && codePoint <= SECONDARY_UNICODE_RANGE[1];
     var isDoubled = cleaned.length === 2 ? cleaned[0] === cleaned[1] : false;
     return {
       value: isDoubled ? toHex(cleaned[0]) : toHex(cleaned),
@@ -2322,15 +2221,16 @@ var cydj = (function (exports) {
   }
 
   function replaceForPosition(node, position) {
-    var pendingAttribute = "".concat(DATA_FA_PSEUDO_ELEMENT_PENDING).concat(position.replace(':', '-'));
-    return new Promise(function (resolve, reject) {
+    var pendingAttribute =
+        ''.concat(DATA_FA_PSEUDO_ELEMENT_PENDING).concat(position.replace(':', '-'));
+    return new Promise(function(resolve, reject) {
       if (node.getAttribute(pendingAttribute) !== null) {
         // This node is already being processed
         return resolve();
       }
 
       var children = toArray(node.children);
-      var alreadyProcessedPseudoElement = children.filter(function (c) {
+      var alreadyProcessedPseudoElement = children.filter(function(c) {
         return c.getAttribute(DATA_FA_PSEUDO_ELEMENT) === position;
       })[0];
       var styles = WINDOW.getComputedStyle(node, position);
@@ -2339,19 +2239,21 @@ var cydj = (function (exports) {
       var content = styles.getPropertyValue('content');
 
       if (alreadyProcessedPseudoElement && !fontFamily) {
-        // If we've already processed it but the current computed style does not result in a font-family,
-        // that probably means that a class name that was previously present to make the icon has been
-        // removed. So we now should delete the icon.
+        // If we've already processed it but the current computed style does not result in a
+        // font-family, that probably means that a class name that was previously present to make
+        // the icon has been removed. So we now should delete the icon.
         node.removeChild(alreadyProcessedPseudoElement);
         return resolve();
       } else if (fontFamily && content !== 'none' && content !== '') {
         var _content = styles.getPropertyValue('content');
 
-        var prefix = ~['Solid', 'Regular', 'Light', 'Thin', 'Duotone', 'Brands', 'Kit'].indexOf(fontFamily[2]) ? STYLE_TO_PREFIX[fontFamily[2].toLowerCase()] : FONT_WEIGHT_TO_PREFIX[fontWeight];
+        var prefix = ~['Solid', 'Regular', 'Light', 'Thin', 'Duotone', 'Brands', 'Kit'].indexOf(
+                         fontFamily[2]) ?
+            STYLE_TO_PREFIX[fontFamily[2].toLowerCase()] :
+            FONT_WEIGHT_TO_PREFIX[fontWeight];
 
         var _hexValueFromContent = hexValueFromContent(_content),
-            hexValue = _hexValueFromContent.value,
-            isSecondary = _hexValueFromContent.isSecondary;
+            hexValue = _hexValueFromContent.value, isSecondary = _hexValueFromContent.isSecondary;
 
         var isV4 = fontFamily[0].startsWith('FontAwesome');
         var iconName = byUnicode(prefix, hexValue);
@@ -2364,11 +2266,15 @@ var cydj = (function (exports) {
             iconName = iconName4.iconName;
             prefix = iconName4.prefix;
           }
-        } // Only convert the pseudo element in this ::before/::after position into an icon if we haven't
+        }  // Only convert the pseudo element in this ::before/::after position into an icon if we
+           // haven't
         // already done so with the same prefix and iconName
 
 
-        if (iconName && !isSecondary && (!alreadyProcessedPseudoElement || alreadyProcessedPseudoElement.getAttribute(DATA_PREFIX) !== prefix || alreadyProcessedPseudoElement.getAttribute(DATA_ICON) !== iconIdentifier)) {
+        if (iconName && !isSecondary &&
+            (!alreadyProcessedPseudoElement ||
+             alreadyProcessedPseudoElement.getAttribute(DATA_PREFIX) !== prefix ||
+             alreadyProcessedPseudoElement.getAttribute(DATA_ICON) !== iconIdentifier)) {
           node.setAttribute(pendingAttribute, iconIdentifier);
 
           if (alreadyProcessedPseudoElement) {
@@ -2379,31 +2285,30 @@ var cydj = (function (exports) {
           var meta = blankMeta();
           var extra = meta.extra;
           extra.attributes[DATA_FA_PSEUDO_ELEMENT] = position;
-          findIcon(iconName, prefix).then(function (main) {
-            var abstract = makeInlineSvgAbstract(_objectSpread2(_objectSpread2({}, meta), {}, {
-              icons: {
-                main: main,
-                mask: emptyCanonicalIcon()
-              },
-              prefix: prefix,
-              iconName: iconIdentifier,
-              extra: extra,
-              watchable: true
-            }));
-            var element = DOCUMENT.createElement('svg');
+          findIcon(iconName, prefix)
+              .then(function(main) {
+                var abstract = makeInlineSvgAbstract(_objectSpread2(_objectSpread2({}, meta), {}, {
+                  icons: {main: main, mask: emptyCanonicalIcon()},
+                  prefix: prefix,
+                  iconName: iconIdentifier,
+                  extra: extra,
+                  watchable: true
+                }));
+                var element = DOCUMENT.createElement('svg');
 
-            if (position === '::before') {
-              node.insertBefore(element, node.firstChild);
-            } else {
-              node.appendChild(element);
-            }
+                if (position === '::before') {
+                  node.insertBefore(element, node.firstChild);
+                } else {
+                  node.appendChild(element);
+                }
 
-            element.outerHTML = abstract.map(function (a) {
+                element.outerHTML = abstract.map(function (a) {
               return toHtml(a);
             }).join('\n');
-            node.removeAttribute(pendingAttribute);
-            resolve();
-          }).catch(reject);
+                node.removeAttribute(pendingAttribute);
+                resolve();
+              })
+              .catch(reject);
         } else {
           resolve();
         }
@@ -2418,24 +2323,29 @@ var cydj = (function (exports) {
   }
 
   function processable(node) {
-    return node.parentNode !== document.head && !~TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS.indexOf(node.tagName.toUpperCase()) && !node.getAttribute(DATA_FA_PSEUDO_ELEMENT) && (!node.parentNode || node.parentNode.tagName !== 'svg');
+    return node.parentNode !== document.head &&
+        !~TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS.indexOf(node.tagName.toUpperCase()) &&
+        !node.getAttribute(DATA_FA_PSEUDO_ELEMENT) &&
+        (!node.parentNode || node.parentNode.tagName !== 'svg');
   }
 
   function searchPseudoElements(root) {
     if (!IS_DOM) return;
-    return new Promise(function (resolve, reject) {
+    return new Promise(function(resolve, reject) {
       var operations = toArray(root.querySelectorAll('*')).filter(processable).map(replace);
       var end = perf.begin('searchPseudoElements');
       disableObservation();
-      Promise.all(operations).then(function () {
-        end();
-        enableObservation();
-        resolve();
-      }).catch(function () {
-        end();
-        enableObservation();
-        reject();
-      });
+      Promise.all(operations)
+          .then(function() {
+            end();
+            enableObservation();
+            resolve();
+          })
+          .catch(function() {
+            end();
+            enableObservation();
+            reject();
+          });
     });
   }
 
@@ -2449,9 +2359,8 @@ var cydj = (function (exports) {
       };
     },
     provides: function provides(providers$$1) {
-      providers$$1.pseudoElements2svg = function (params) {
-        var _params$node = params.node,
-            node = _params$node === void 0 ? DOCUMENT : _params$node;
+      providers$$1.pseudoElements2svg = function(params) {
+        var _params$node = params.node, node = _params$node === void 0 ? DOCUMENT : _params$node;
 
         if (config.searchPseudoElements) {
           searchPseudoElements(node);
@@ -2486,9 +2395,8 @@ var cydj = (function (exports) {
           if (_unwatched) {
             enableObservation();
           } else {
-            observe(chainHooks('mutationObserverCallbacks', {
-              observeMutationsRoot: observeMutationsRoot
-            }));
+            observe(chainHooks(
+                'mutationObserverCallbacks', {observeMutationsRoot: observeMutationsRoot}));
           }
         }
       };
@@ -2496,15 +2404,8 @@ var cydj = (function (exports) {
   };
 
   var parseTransformString = function parseTransformString(transformString) {
-    var transform = {
-      size: 16,
-      x: 0,
-      y: 0,
-      flipX: false,
-      flipY: false,
-      rotate: 0
-    };
-    return transformString.toLowerCase().split(' ').reduce(function (acc, n) {
+    var transform = {size: 16, x: 0, y: 0, flipX: false, flipY: false, rotate: 0};
+    return transformString.toLowerCase().split(' ').reduce(function(acc, n) {
       var parts = n.toLowerCase().split('-');
       var first = parts[0];
       var rest = parts.slice(1).join('-');
@@ -2582,28 +2483,20 @@ var cydj = (function (exports) {
       };
     },
     provides: function provides(providers) {
-      providers.generateAbstractTransformGrouping = function (_ref) {
-        var main = _ref.main,
-            transform = _ref.transform,
-            containerWidth = _ref.containerWidth,
+      providers.generateAbstractTransformGrouping = function(_ref) {
+        var main = _ref.main, transform = _ref.transform, containerWidth = _ref.containerWidth,
             iconWidth = _ref.iconWidth;
-        var outer = {
-          transform: "translate(".concat(containerWidth / 2, " 256)")
-        };
-        var innerTranslate = "translate(".concat(transform.x * 32, ", ").concat(transform.y * 32, ") ");
-        var innerScale = "scale(".concat(transform.size / 16 * (transform.flipX ? -1 : 1), ", ").concat(transform.size / 16 * (transform.flipY ? -1 : 1), ") ");
-        var innerRotate = "rotate(".concat(transform.rotate, " 0 0)");
+        var outer = {transform: 'translate('.concat(containerWidth / 2, ' 256)')};
+        var innerTranslate =
+            'translate('.concat(transform.x * 32, ', ').concat(transform.y * 32, ') ');
+        var innerScale = 'scale('.concat(transform.size / 16 * (transform.flipX ? -1 : 1), ', ')
+                             .concat(transform.size / 16 * (transform.flipY ? -1 : 1), ') ');
+        var innerRotate = 'rotate('.concat(transform.rotate, ' 0 0)');
         var inner = {
-          transform: "".concat(innerTranslate, " ").concat(innerScale, " ").concat(innerRotate)
+          transform: ''.concat(innerTranslate, ' ').concat(innerScale, ' ').concat(innerRotate)
         };
-        var path = {
-          transform: "translate(".concat(iconWidth / 2 * -1, " -256)")
-        };
-        var operations = {
-          outer: outer,
-          inner: inner,
-          path: path
-        };
+        var path = {transform: 'translate('.concat(iconWidth / 2 * -1, ' -256)')};
+        var operations = {outer: outer, inner: inner, path: path};
         return {
           tag: 'g',
           attributes: _objectSpread2({}, operations.outer),
@@ -2621,12 +2514,7 @@ var cydj = (function (exports) {
     }
   };
 
-  var ALL_SPACE = {
-    x: 0,
-    y: 0,
-    width: '100%',
-    height: '100%'
-  };
+  var ALL_SPACE = {x: 0, y: 0, width: '100%', height: '100%'};
 
   function fillBlack(abstract) {
     var force = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
@@ -2651,9 +2539,10 @@ var cydj = (function (exports) {
       return {
         parseNodeAttributes: function parseNodeAttributes(accumulator, node) {
           var maskData = node.getAttribute('data-fa-mask');
-          var mask = !maskData ? emptyCanonicalIcon() : getCanonicalIcon(maskData.split(' ').map(function (i) {
-            return i.trim();
-          }));
+          var mask = !maskData ? emptyCanonicalIcon() :
+                                 getCanonicalIcon(maskData.split(' ').map(function(i) {
+                                   return i.trim();
+                                 }));
 
           if (!mask.prefix) {
             mask.prefix = getDefaultUsablePrefix();
@@ -2666,77 +2555,59 @@ var cydj = (function (exports) {
       };
     },
     provides: function provides(providers) {
-      providers.generateAbstractMask = function (_ref) {
-        var children = _ref.children,
-            attributes = _ref.attributes,
-            main = _ref.main,
-            mask = _ref.mask,
-            explicitMaskId = _ref.maskId,
-            transform = _ref.transform;
-        var mainWidth = main.width,
-            mainPath = main.icon;
-        var maskWidth = mask.width,
-            maskPath = mask.icon;
-        var trans = transformForSvg({
-          transform: transform,
-          containerWidth: maskWidth,
-          iconWidth: mainWidth
-        });
+      providers.generateAbstractMask = function(_ref) {
+        var children = _ref.children, attributes = _ref.attributes, main = _ref.main,
+            mask = _ref.mask, explicitMaskId = _ref.maskId, transform = _ref.transform;
+        var mainWidth = main.width, mainPath = main.icon;
+        var maskWidth = mask.width, maskPath = mask.icon;
+        var trans = transformForSvg(
+            {transform: transform, containerWidth: maskWidth, iconWidth: mainWidth});
         var maskRect = {
           tag: 'rect',
-          attributes: _objectSpread2(_objectSpread2({}, ALL_SPACE), {}, {
-            fill: 'white'
-          })
+          attributes: _objectSpread2(_objectSpread2({}, ALL_SPACE), {}, {fill: 'white'})
         };
-        var maskInnerGroupChildrenMixin = mainPath.children ? {
-          children: mainPath.children.map(fillBlack)
-        } : {};
+        var maskInnerGroupChildrenMixin =
+            mainPath.children ? {children: mainPath.children.map(fillBlack)} : {};
         var maskInnerGroup = {
           tag: 'g',
           attributes: _objectSpread2({}, trans.inner),
-          children: [fillBlack(_objectSpread2({
-            tag: mainPath.tag,
-            attributes: _objectSpread2(_objectSpread2({}, mainPath.attributes), trans.path)
-          }, maskInnerGroupChildrenMixin))]
+          children: [fillBlack(_objectSpread2(
+              {
+                tag: mainPath.tag,
+                attributes: _objectSpread2(_objectSpread2({}, mainPath.attributes), trans.path)
+              },
+              maskInnerGroupChildrenMixin))]
         };
         var maskOuterGroup = {
           tag: 'g',
           attributes: _objectSpread2({}, trans.outer),
           children: [maskInnerGroup]
         };
-        var maskId = "mask-".concat(explicitMaskId || nextUniqueId());
-        var clipId = "clip-".concat(explicitMaskId || nextUniqueId());
+        var maskId = 'mask-'.concat(explicitMaskId || nextUniqueId());
+        var clipId = 'clip-'.concat(explicitMaskId || nextUniqueId());
         var maskTag = {
           tag: 'mask',
-          attributes: _objectSpread2(_objectSpread2({}, ALL_SPACE), {}, {
-            id: maskId,
-            maskUnits: 'userSpaceOnUse',
-            maskContentUnits: 'userSpaceOnUse'
-          }),
+          attributes: _objectSpread2(
+              _objectSpread2({}, ALL_SPACE), {},
+              {id: maskId, maskUnits: 'userSpaceOnUse', maskContentUnits: 'userSpaceOnUse'}),
           children: [maskRect, maskOuterGroup]
         };
         var defs = {
           tag: 'defs',
-          children: [{
-            tag: 'clipPath',
-            attributes: {
-              id: clipId
-            },
-            children: deGroup(maskPath)
-          }, maskTag]
+          children:
+              [{tag: 'clipPath', attributes: {id: clipId}, children: deGroup(maskPath)}, maskTag]
         };
         children.push(defs, {
           tag: 'rect',
-          attributes: _objectSpread2({
-            fill: 'currentColor',
-            'clip-path': "url(#".concat(clipId, ")"),
-            mask: "url(#".concat(maskId, ")")
-          }, ALL_SPACE)
+          attributes: _objectSpread2(
+              {
+                fill: 'currentColor',
+                'clip-path': 'url(#'.concat(clipId, ')'),
+                mask: 'url(#'.concat(maskId, ')')
+              },
+              ALL_SPACE)
         });
-        return {
-          children: children,
-          attributes: attributes
-        };
+        return {children: children, attributes: attributes};
       };
     }
   };
@@ -2749,16 +2620,10 @@ var cydj = (function (exports) {
         reduceMotion = WINDOW.matchMedia('(prefers-reduced-motion: reduce)').matches;
       }
 
-      providers.missingIconAbstract = function () {
+      providers.missingIconAbstract = function() {
         var gChildren = [];
-        var FILL = {
-          fill: 'currentColor'
-        };
-        var ANIMATION_BASE = {
-          attributeType: 'XML',
-          repeatCount: 'indefinite',
-          dur: '2s'
-        }; // Ring
+        var FILL = {fill: 'currentColor'};
+        var ANIMATION_BASE = {attributeType: 'XML', repeatCount: 'indefinite', dur: '2s'};  // Ring
 
         gChildren.push({
           tag: 'path',
@@ -2767,33 +2632,28 @@ var cydj = (function (exports) {
           })
         });
 
-        var OPACITY_ANIMATE = _objectSpread2(_objectSpread2({}, ANIMATION_BASE), {}, {
-          attributeName: 'opacity'
-        });
+        var OPACITY_ANIMATE =
+            _objectSpread2(_objectSpread2({}, ANIMATION_BASE), {}, {attributeName: 'opacity'});
 
         var dot = {
           tag: 'circle',
-          attributes: _objectSpread2(_objectSpread2({}, FILL), {}, {
-            cx: '256',
-            cy: '364',
-            r: '28'
-          }),
+          attributes: _objectSpread2(_objectSpread2({}, FILL), {}, {cx: '256', cy: '364', r: '28'}),
           children: []
         };
 
         if (!reduceMotion) {
-          dot.children.push({
-            tag: 'animate',
-            attributes: _objectSpread2(_objectSpread2({}, ANIMATION_BASE), {}, {
-              attributeName: 'r',
-              values: '28;14;28;28;14;28;'
-            })
-          }, {
-            tag: 'animate',
-            attributes: _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {
-              values: '1;0;1;1;0;1;'
-            })
-          });
+          dot.children.push(
+              {
+                tag: 'animate',
+                attributes: _objectSpread2(
+                    _objectSpread2({}, ANIMATION_BASE), {},
+                    {attributeName: 'r', values: '28;14;28;28;14;28;'})
+              },
+              {
+                tag: 'animate',
+                attributes: _objectSpread2(
+                    _objectSpread2({}, OPACITY_ANIMATE), {}, {values: '1;0;1;1;0;1;'})
+              });
         }
 
         gChildren.push(dot);
@@ -2805,9 +2665,8 @@ var cydj = (function (exports) {
           }),
           children: reduceMotion ? [] : [{
             tag: 'animate',
-            attributes: _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {
-              values: '1;0;0;0;0;1;'
-            })
+            attributes:
+                _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {values: '1;0;0;0;0;1;'})
           }]
         });
 
@@ -2821,20 +2680,13 @@ var cydj = (function (exports) {
             }),
             children: [{
               tag: 'animate',
-              attributes: _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {
-                values: '0;0;1;1;0;0;'
-              })
+              attributes:
+                  _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {values: '0;0;1;1;0;0;'})
             }]
           });
         }
 
-        return {
-          tag: 'g',
-          attributes: {
-            'class': 'missing'
-          },
-          children: gChildren
-        };
+        return {tag: 'g', attributes: {'class': 'missing'}, children: gChildren};
       };
     }
   };
@@ -2852,11 +2704,12 @@ var cydj = (function (exports) {
     }
   };
 
-  var plugins = [InjectCSS, ReplaceElements, Layers, LayersCounter, LayersText, PseudoElements, MutationObserver$1, PowerTransforms, Masks, MissingIconIndicator, SvgSymbols];
+  var plugins = [
+    InjectCSS, ReplaceElements, Layers, LayersCounter, LayersText, PseudoElements,
+    MutationObserver$1, PowerTransforms, Masks, MissingIconIndicator, SvgSymbols
+  ];
 
-  registerPlugins(plugins, {
-    mixoutsTo: api
-  });
+  registerPlugins(plugins, {mixoutsTo: api});
   api.noAuto;
   var config$1 = api.config;
   var library$1 = api.library;
@@ -2871,13 +2724,16 @@ var cydj = (function (exports) {
 
   /*!
    * Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com
-   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
-   * Copyright 2022 Fonticons, Inc.
+   * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT
+   * License) Copyright 2022 Fonticons, Inc.
    */
   var faCamera = {
     prefix: 'fas',
     iconName: 'camera',
-    icon: [512, 512, [62258, "camera-alt"], "f030", "M194.6 32H317.4C338.1 32 356.4 45.22 362.9 64.82L373.3 96H448C483.3 96 512 124.7 512 160V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V160C0 124.7 28.65 96 64 96H138.7L149.1 64.82C155.6 45.22 173.9 32 194.6 32H194.6zM256 384C309 384 352 341 352 288C352 234.1 309 192 256 192C202.1 192 160 234.1 160 288C160 341 202.1 384 256 384z"]
+    icon: [
+      512, 512, [62258, 'camera-alt'], 'f030',
+      'M194.6 32H317.4C338.1 32 356.4 45.22 362.9 64.82L373.3 96H448C483.3 96 512 124.7 512 160V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V160C0 124.7 28.65 96 64 96H138.7L149.1 64.82C155.6 45.22 173.9 32 194.6 32H194.6zM256 384C309 384 352 341 352 288C352 234.1 309 192 256 192C202.1 192 160 234.1 160 288C160 341 202.1 384 256 384z'
+    ]
   };
 
   function formatBadgeToHtml(url) {
@@ -3005,7 +2861,7 @@ var cydj = (function (exports) {
         'https://cdn.discordapp.com/attachments/915656975696687124/915713189109444718/100_Bits.png';
     static BITS_1000 =
         'https://cdn.discordapp.com/attachments/915656975696687124/915713247716442182/1000_Bits.png';
-     static BITS_25000 =
+    static BITS_25000 =
         'https://cdn.discordapp.com/attachments/915656975696687124/915713360920739860/25000_Bits.png';
     static BITS_100000 =
         'https://cdn.discordapp.com/attachments/915656975696687124/915713532006375464/100000_Bits.png';
@@ -3375,7 +3231,7 @@ var cydj = (function (exports) {
     'NeoTheOne': [
       Xqc.SUB_24_MONTHS_T1,
       'https://cdn.discordapp.com/attachments/915656975696687124/1087365553045372928/1.png',
-    ], 
+    ],
   };
 
   // ID of previous video queued (so !random doesn't add it again)
@@ -3489,15 +3345,7 @@ var cydj = (function (exports) {
       } else if (msg.startsWith('!np')) {
         msg = 'Now playing: ' + $('.queue_active a').html();
       } else if (msg.startsWith('!discord')) {
-        msg = 'https://discord.gg/g8tCGSc2bx';
-      } else if (msg.startsWith('!link')) {
-        msg = 'https://tinyurl.com/jamcydj';
-      } else if (msg.startsWith('!guide')) {
-        msg = 'https://tinyurl.com/CyDJguideV2';
-      } else if (msg.startsWith('!script')) {
-        msg = 'http://github.com/papertek/CyDJ';
-      } else if (msg.startsWith('!report')) {
-        msg = 'https://tinyurl.com/CDJReport';
+        msg = 'null';
       } else if (msg.startsWith('!botcommands')) {
         msg = 'https://github.com/airforce270/cytubebot#commands';
       } else if (msg.startsWith('!version')) {
@@ -3858,7 +3706,9 @@ var cydj = (function (exports) {
       'https://www.youtube.com/watch?v=1y2wUv8R-0M',
       'Gawr Gura - REFLECT (Assertive Hardcore Bootleg)',
     ],
-    ['https://www.youtube.com/watch?v=6jo68G_C16s', 'Kizuna Ai - Sky High (Mtell Hardcore Bootleg)'],
+    [
+      'https://www.youtube.com/watch?v=6jo68G_C16s', 'Kizuna Ai - Sky High (Mtell Hardcore Bootleg)'
+    ],
     [
       'https://www.youtube.com/watch?v=Gif0FoEyPBI',
       'Akari Nanawo - Higher\'s High (Mtell Hardcore Bootleg)',
@@ -3963,29 +3813,6 @@ var cydj = (function (exports) {
     return logos;
   })();
 
-  /*
-  The MIT License (MIT)
-  //
-  Copyright (c) 2013-2014 Zimny Lech, 2022 CyDJ developers
-
-  Permission is hereby granted, free of charge, to any person obtaining a copy of
-  this software and associated documentation files (the "Software"), to deal in
-  the Software without restriction, including without limitation the rights to
-  use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-  off the Software, and to permit persons to whom the Software is furnished to do
-  so, subject to the following conditions:
-
-  The above copyright notice and this permission notice shall be included in all
-  copies or substantial portions of the Software.
-
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-  FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-  COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  */
-
   config$1.autoA11y = true;
 
   const camera = icon({prefix: 'fas', iconName: 'camera'});
@@ -4019,15 +3846,15 @@ var cydj = (function (exports) {
 
   const MiniLogo_URL = 'https://cdn.7tv.app/emote/614e8c0b20eaf897465a4c9d/1x.webp';
 
-  const ChannelName_Caption = 'CyDJ';
+  const ChannelName_Caption = 'ip00';
 
-  const Version_Now = 'CyDJEdge3.20.23.0';
+  const Version_Now = 'ip00 0.5';
 
   const HeaderDropMenu_Title = 'Information';
 
   const RulesBtn_Caption = 'Read Channel Rules';
 
-  const ChannelAnnouncement_Title = 'CyDJ Alert';
+  const ChannelAnnouncement_Title = 'ip00 Alert';
 
   const TitleIcon_URL = 'https://cdn.7tv.app/emote/6040a8bccf6746000db10348/2x';
 
@@ -4042,28 +3869,19 @@ var cydj = (function (exports) {
   const PlayerHiding_URL = 'https://c.tenor.com/Q6UjBrnSzvQAAAAC/anime-uh.gif';
 
   const HeaderDropMenu_Array = [
-    ['CyDJ Rooms', ''],
-    ['Main Room', 'https://cytu.be/r/cydj'],
-    ['Second Room', 'https://cytu.be/r/secretfbimeeting'],
+    ['ip00 Rooms', ''],
+    ['Main Room', 'https://cytu.be/r/ip00'],
+    ['Second Room', 'https://cytu.be/r/ip00'],
     //  ['Watch Party', 'https://beta.synchtube.me/r/SecretTwitchRoom'],
-    ['Test Room', 'https://cytu.be/r/testplacelilroc'],
-    ['Test Room 2', 'https://cytu.be/r/emptyroomtestplace'],
-    ['Test Room 3', 'https://cytu.be/r/xqcPeepo'],
-    ['Community Related', ''],
-    ['CyDJ Discord', 'https://discord.gg/g8tCGSc2bx'],
-    ['Camellia Discord', 'https://discord.gg/camellia'],
     ['Credits', ''],
     [
       'CyTube FAQ',
       'https://github.com/calzoneman/sync/wiki/Beginner%27s-Guide-and-FAQ',
     ],
-    ['CyTube Source', 'https://github.com/calzoneman/sync'],
-    ['CyDJ Source', 'https://github.com/papertek/CyDJ'],
-    ['CyDJ Bot Source', 'https://github.com/airforce270/CytubeBot'],
   ];
 
   const MOTDAutoLogo_Array = [
-    'https://github.com/papertek/CyDJ/raw/beta/images/cydjnormal.jpg',
+    'https://github.com/0gip/ip00/tree/deploy/deploy/main/images/eliselis4x.webp',
   ];
 
   const ModPanel_Array = [
@@ -4128,8 +3946,7 @@ var cydj = (function (exports) {
   const RulesBtn_HTML =
       '<ol><li>You want to write on the chat? Enter temporary nickname into <b>Guest Login</b> input and click enter.</li><li>You want to register a nick? Click <b>Account -> Profile</b> on the top of the channel, and fill the registration form. You don\'t need an email to register.</li><li>Troll skipping = immediate kick.</li><li>Don\'t be annoying.</li><li>Do not one man spam.</li><li>Do not encourage chat wars or harass/target people.</li><li>Queueing blatant NSFW videos such as porn/hentai/gore is strictly not allowed, doing so will result in an ip ban.</li><li>Queuing the same video but in different link variants is not allowed.</li><li>Mods have the right to skip a video if its overplayed.</li><li><b>These rules are subject to common sense.</b></li></ol>';
 
-  const ChannelAnnouncement_HTML =
-      'Please join the <a href="https://discord.gg/g8tCGSc2bx" target="_blank">Discord</a> for news regarding CyDJ.';
+  const ChannelAnnouncement_HTML = 'Hi';
 
   const EmbeddingMedia_Images =
       'a[href$=".jpg"], a[href$=".jpg:large"], a[href$=".jpeg"], a[href$=".JPEG"], a[href$=".JPG"], a[href$=".png"], a[href$=".PNG"], a[href$=".tiff"], a[href$=".TIFF"], a[href$=".webp"], a[href$=".WEBP"], a[href$=".gif"], a[href$=".GIF"]';
@@ -4224,7 +4041,8 @@ var cydj = (function (exports) {
   // c) [imgur]suok1xr.jpg[/imgur] - imgur picture
   // d) [drop]7mrz85gl29eiiks/logo.png[/drop] - dropbox picture
   // e) [minus/i5]ig0qs6fvWvgBu.jpg[/minus] - minus.com picture
-  // f) [vi/b]1r8ih4t1.vichan.png[/vi] - vichan /b/ imageboard picture (you can use other boards too)
+  // f) [vi/b]1r8ih4t1.vichan.png[/vi] - vichan /b/ imageboard picture (you can use other boards
+  // too)
 
   const IndependentFilters = [
     {
@@ -4285,12 +4103,11 @@ var cydj = (function (exports) {
   }
 
   /* ----- getting and setting channel options ----- */
-  const defplayer = 'left' ;
-  const defuserlist = 'right' ;
-  const defqueue = 'left' ;
+  const defplayer = 'left';
+  const defuserlist = 'right';
+  const defqueue = 'left';
 
-  const DEFTHEME =
-      '/css/themes/slate.css';
+  const DEFTHEME = '/css/themes/slate.css';
 
   const USERCONFIG = {
     'player': getOrDefault(CHANNEL.name + '_player', defplayer),
@@ -4404,9 +4221,12 @@ var cydj = (function (exports) {
   function addToPlaylist(link, stand) {
     const parsed = parseMediaLink(link);
     if (parsed['id'] != null) {
-      socket.emit(
-          'queue',
-          {id: parsed['id'], pos: stand, type: parsed['type'], temp: $('.add-temp').prop('checked')});
+      socket.emit('queue', {
+        id: parsed['id'],
+        pos: stand,
+        type: parsed['type'],
+        temp: $('.add-temp').prop('checked')
+      });
     }
   }
 
@@ -4838,7 +4658,7 @@ var cydj = (function (exports) {
     }
 
     static getLocalStorageKey() {
-      return `cydj_${CHANNEL.name}_chat_stats`;
+      return `ip00_${CHANNEL.name}_chat_stats`;
     }
   }
 
@@ -4894,7 +4714,7 @@ var cydj = (function (exports) {
    */
   function createDatabase() {
     let html =
-        '<button id="la1" class="btn btn-default btn-sm db-break" onclick="cydj.toggleCat(1)">' +
+        '<button id="la1" class="btn btn-default btn-sm db-break" onclick="ip00.toggleCat(1)">' +
         CHANNEL_DATABASE$1[0][1] + '</button>' +
         '<ul id="l1" class="videolist db-cat">';
 
@@ -4908,7 +4728,7 @@ var cydj = (function (exports) {
 
         html += `</ul><button id="la${layer_nr}" ` +
             `class="btn btn-default btn-sm db-break" ` +
-            `onclick="cydj.toggleCat(${layer_nr})">` +
+            `onclick="ip00.toggleCat(${layer_nr})">` +
             `${CHANNEL_DATABASE$1[i][1]}</button>` +
             `<ul id="l${layer_nr}" class="videolist db-cat">`;
       } else {
@@ -4918,13 +4738,13 @@ var cydj = (function (exports) {
 
         html += '<li class="queue_entry">' +
             `<button class="btn btn-default btn-xs pull-right" ` +
-            `onclick="cydj.addVideo('${link}')">End</button>`;
+            `onclick="ip00.addVideo('${link}')">End</button>`;
 
         const parsed = parseMediaLink(link);
         if (parsed['type'] === 'yt') {
           const a = parsed['id'];
           html += '<button class="btn btn-default btn-xs pull-right" ' +
-              `onclick="cydj.prevVideo('${a}')">` +
+              `onclick="ip00.prevVideo('${a}')">` +
               '<i class="glyphicon glyphicon-film"></i>' +
               '</button>';
         }
@@ -5418,7 +5238,7 @@ var cydj = (function (exports) {
             '<code>!!</code> - beginning and end of fastest bounce text scrolling!',
           ].map((line) => `<li>${line}</li>`)
               .join('') +
-          'For a quick CyDJ guide check out this Google Doc <a href="https://tinyurl.com/CyDJguideV2" target="_blank">here</a>.';
+          'For a quick guide check out this Google Doc <a href="https://tinyurl.com/CyDJguideV2" target="_blank">here</a>.';
       $('<ul />').html(html).appendTo(modalBody);
     }
     {
@@ -5439,16 +5259,14 @@ var cydj = (function (exports) {
         'stat': 'displaying user chat statistics in current session (<i>!stat</i>)',
         'version': 'displays current script version (<i>!version</i>)',
         'report': 'links a report fourm for reporting a user (<i>!report</i>)',
-        'guide': 'links the CyDJ guide (<i>!guide</i>)',
-        'script': 'links the CyDJ GitHub (<i>!script</i>)',
+        'guide': 'links the guide (<i>!guide</i>)',
+        'script': 'links the GitHub (<i>!script</i>)',
         'botcommands': 'link to bot commands (<i>!botcommands</i>)',
-        'discord': 'link to the CyDJ discord (<i>!discord</i>)',
+        'discord': 'link to the discord (<i>!discord</i>)',
         'link': 'post a TinyURL link for this room (<i>!link</i>)',
         'randomemote': 'displays a random emote from the emote list (<i>!randomemote</i>)',
       };
-      {
-        arr['random'] = 'adding random link from database (<i>!random</i>)';
-      }
+      { arr['random'] = 'adding random link from database (<i>!random</i>)'; }
       modalBody.append('<strong>New chat commands</strong><br /><br />');
       const ul = $('<ul />').appendTo(modalBody);
       for (const [cmd, desc] of Object.entries(arr)) {
@@ -5703,8 +5521,10 @@ var cydj = (function (exports) {
     logoinsert.val(USERCONFIG.logo);
     addOption('Top logo', logoinsert);
 
-    const userlogo =
-        $('<input />').addClass('form-control').attr('type', 'text').attr('placeholder', 'Image URL');
+    const userlogo = $('<input />')
+                         .addClass('form-control')
+                         .attr('type', 'text')
+                         .attr('placeholder', 'Image URL');
     userlogo.val('');
     addOption('User logo URL', userlogo);
 
@@ -5911,9 +5731,7 @@ var cydj = (function (exports) {
       $('#fontspanel, #emotespanel').addClass('fluidpanel');
       setTimeout(refreshPlayer(), 1000);
     }
-    {
-      setMode(modesel.val());
-    }
+    { setMode(modesel.val()); }
     FLUID = !FLUID;
     setOpt(CHANNEL.name + '_fluid', FLUID);
     scrollChat();
@@ -6049,8 +5867,8 @@ var cydj = (function (exports) {
         $('<button class="btn btn-default pull-left">HTML Code</button>').appendTo(modalFooter);
     const olist =
         $('<button class="btn btn-default pull-left">Ordered List</button>').appendTo(modalFooter);
-    const dlist =
-        $('<button class="btn btn-default pull-left">Database Format</button>').appendTo(modalFooter);
+    const dlist = $('<button class="btn btn-default pull-left">Database Format</button>')
+                      .appendTo(modalFooter);
 
     rlist.on('click', () => data.val(formatRawList()));
     tlist.on('click', () => data.val(formatPlainTextList()));
@@ -6217,14 +6035,10 @@ var cydj = (function (exports) {
   });
 
   // changing channel name
-  {
-    $('.navbar-brand').html(ChannelName_Caption);
-  }
+  { $('.navbar-brand').html(ChannelName_Caption); }
 
   // adding channel small logo
-  {
-    $(`<img id="chanavatar" src="${MiniLogo_URL}" />`).prependTo('.navbar-brand');
-  }
+  { $(`<img id="chanavatar" src="${MiniLogo_URL}" />`).prependTo('.navbar-brand'); }
 
   // adding header dropdown menu
   {
@@ -6253,19 +6067,13 @@ var cydj = (function (exports) {
   // adding version to the tab
   {
     const headerdrop = $('<li id="headerdrop" class="dropdown" />').insertAfter('#channelset-link');
-    $('<a class="dropdown-toggle disabled" href="https://github.com/papertek/CyDJ" />')
-        .html(`${Version_Now}`)
-        .appendTo(headerdrop);
+    $('<a class="dropdown-toggle disabled" href="" />').html(`${Version_Now}`).appendTo(headerdrop);
   }
 
   // optional removing of "Layout" menu from header
-  {
-    $('#layout-link').remove();
-  }
+  { $('#layout-link').remove(); }
 
-  {
-    $('#showmediaurl').html('<i class="glyphicon glyphicon-plus"></i> Add');
-  }
+  { $('#showmediaurl').html('<i class="glyphicon glyphicon-plus"></i> Add'); }
 
   // setting MOTD
   {
@@ -6274,9 +6082,7 @@ var cydj = (function (exports) {
   }
 
   // adding custom channel announcement
-  {
-    makeAlert(ChannelAnnouncement_Title, ChannelAnnouncement_HTML).appendTo('#announcements');
-  }
+  { makeAlert(ChannelAnnouncement_Title, ChannelAnnouncement_HTML).appendTo('#announcements'); }
 
   // adding full-width title bar and progress bar
   {
@@ -6286,9 +6092,7 @@ var cydj = (function (exports) {
         .appendTo(titlerow);
     mediainfo = $('<p id="mediainfo" />').html('Nothing is playing').prependTo('#videowrap');
 
-    {
-      setInterval(() => progressBar(), 2000);
-    }
+    { setInterval(() => progressBar(), 2000); }
 
     socket.on('changeMedia', showInfo);
     showInfo();
@@ -6378,16 +6182,12 @@ var cydj = (function (exports) {
   socket.on('rank', toggleChatFunctions);
   toggleChatFunctions();
 
-  {
-    socket.emit('chatMsg', {msg: `/me ${JoinText_Message}`});
-  }
+  { socket.emit('chatMsg', {msg: `/me ${JoinText_Message}`}); }
 
   let chatcontrols;
 
   // adding chat buttons wrapping
-  {
-    chatcontrols = $('<div id="chatcontrols" class="btn-group" />').appendTo('#chatwrap');
-  }
+  { chatcontrols = $('<div id="chatcontrols" class="btn-group" />').appendTo('#chatwrap'); }
 
   let fontspanel;
 
@@ -6433,10 +6233,8 @@ var cydj = (function (exports) {
       modalBody.append('<strong>Useful links</strong><br /><br />');
       const html =
           [
-            '<a href="https://github.com/papertek/CyDJ/releases" target="_blank">Click here to view latest updates</a>!',
-            '<a href="https://docs.google.com/forms/d/e/1FAIpQLSdNlinbPb2Lr5qmtIPWg9gnVWr1US82CRf4X8bKmmLvj7NIhg/viewform" target="_blank">Click here to report a user</a>!',
-            '<a href="https://docs.google.com/document/d/1X2TdR9hc2KK0WEBLjY06CZaY30QyKxsI_7CQ1qbSz0g/edit" target="_blank">Click here to open the CyDJ guide</a>!',
-            '<a href="https://discord.gg/g8tCGSc2bx" target="_blank">Click here to join the Discord</a>!',
+            '<a href="https://docs.google.com/document/d/1X2TdR9hc2KK0WEBLjY06CZaY30QyKxsI_7CQ1qbSz0g/edit" target="_blank">Click here to open the guide</a>!',
+            '<a href="" target="_blank">Click here to join the Discord</a>!',
           ].map((item) => `<li>${item}</li>`)
               .join('');
       $('<ul />').html(html).appendTo(modalBody);
@@ -6487,10 +6285,11 @@ var cydj = (function (exports) {
 
   // adding moderators panel button
   {
-    modbtn = $('<button id="mod-btn" class="btn btn-sm btn-default" title="Show moderators panel" />')
-                 .html('<i class="glyphicon glyphicon-tasks"></i>')
-                 .appendTo(chatcontrols)
-                 .on('click', () => showModPanel());
+    modbtn =
+        $('<button id="mod-btn" class="btn btn-sm btn-default" title="Show moderators panel" />')
+            .html('<i class="glyphicon glyphicon-tasks"></i>')
+            .appendTo(chatcontrols)
+            .on('click', () => showModPanel());
 
     socket.on('rank', toggleModPanel);
     toggleModPanel();
@@ -6549,9 +6348,7 @@ var cydj = (function (exports) {
 
   // creating fonts and emotes main row
   let chatpanel;
-  {
-    chatpanel = $('<div id="chatpanel" class="row" />').insertBefore('#playlistrow');
-  }
+  { chatpanel = $('<div id="chatpanel" class="row" />').insertBefore('#playlistrow'); }
 
   // adding fonts panel
   {
@@ -6584,7 +6381,7 @@ var cydj = (function (exports) {
     ];
 
     for (const [i, font] of FontsArray.entries()) {
-      $(`<button id="cbtn${i}" onclick="cydj.insertText('[${font[1]}]')" />`)
+      $(`<button id="cbtn${i}" onclick="ip00.insertText('[${font[1]}]')" />`)
           .addClass('btn btn-primary')
           .attr('style', font[0])
           .text(font[2])
@@ -6636,7 +6433,8 @@ var cydj = (function (exports) {
   // adding layout configuration well
   const configwrap =
       $('<div id="configwrap" class="col-lg-12 col-md-12" />').appendTo('#leftpane-inner');
-  const configwell = $('<div id="config-well" class="well form-horizontal" />').appendTo(configwrap);
+  const configwell =
+      $('<div id="config-well" class="well form-horizontal" />').appendTo(configwrap);
 
   if (!LAYOUTBOX) {
     toggleDiv(configwrap);
@@ -6798,13 +6596,9 @@ var cydj = (function (exports) {
           'All videos are muted by default, if autoplay - click to unmute, else click to play.\n\n' +
           'This channel supports following types of links (specified as CSS codes):\n' +
           '■ Images - ';
-      {
-        txt += EmbeddingMedia_Images;
-      }
+      { txt += EmbeddingMedia_Images; }
       txt += '\n■ Videos - ';
-      {
-        txt += EmbeddingMedia_Videos;
-      }
+      { txt += EmbeddingMedia_Videos; }
       alert(txt);
     });
 
@@ -6892,7 +6686,8 @@ var cydj = (function (exports) {
   {
     const funcbtnform = $('<div id="funcbtnform" class="form-group" />').appendTo(configwell);
     $('<div class="col-lg-5 col-md-5">Command buttons</div>').appendTo(funcbtnform);
-    const funcbtnwrap = $('<div id="funcbtnwrap" class="col-lg-7 col-md-7" />').appendTo(funcbtnform);
+    const funcbtnwrap =
+        $('<div id="funcbtnwrap" class="col-lg-7 col-md-7" />').appendTo(funcbtnform);
     const btnsgroup = $('<div id="funcbtngroup" class="btn-group" />').appendTo(funcbtnwrap);
 
     {
@@ -6948,9 +6743,7 @@ var cydj = (function (exports) {
     if (CHANNEL_DATABASE$1.length < 1 || CHANNEL_DATABASE$1[0][0] !== '') {
       CHANNEL_DATABASE$1.unshift(['', '(various media)']);
     }
-    {
-      createDatabase();
-    }
+    { createDatabase(); }
   }
 
   // adding playlist options for moderators button
@@ -6985,15 +6778,16 @@ var cydj = (function (exports) {
                             socket.emit('moveMedia', {from: uid, after: PL_CURRENT});
                           });
 
-  const deletelastbtn = $('<button id="deletelast-btn" class="btn btn-default">Delete last</button>')
-                            .appendTo(advplcontrols)
-                            .on('click', () => {
-                              if (confirm('Are you sure to delete last item?')) {
-                                const len = $('#queue').children().length;
-                                const uid = $(`#queue .queue_entry:nth-child(${len})`).data('uid');
-                                socket.emit('delete', uid);
-                              }
-                            });
+  const deletelastbtn =
+      $('<button id="deletelast-btn" class="btn btn-default">Delete last</button>')
+          .appendTo(advplcontrols)
+          .on('click', () => {
+            if (confirm('Are you sure to delete last item?')) {
+              const len = $('#queue').children().length;
+              const uid = $(`#queue .queue_entry:nth-child(${len})`).data('uid');
+              socket.emit('delete', uid);
+            }
+          });
 
   toggleAdvancedPl();
 
@@ -7032,41 +6826,37 @@ var cydj = (function (exports) {
           });
 
   // extending 'Get URLs' function
-  {
-    $('#getplaylist').unbind().on('click', () => getPlaylistURLs());
-  }
+  { $('#getplaylist').unbind().on('click', () => getPlaylistURLs()); }
 
   // Update alert first-time users see
   (function() {
-  const /** @type {HTMLDivElement} */ alertWrapper = document.getElementById('plonotification');
-  if (!alertWrapper) {
-    return;
-  }
+    const /** @type {HTMLDivElement} */ alertWrapper = document.getElementById('plonotification');
+    if (!alertWrapper) {
+      return;
+    }
 
-  const /** @type {HTMLDivElement} */ alertContainer = alertWrapper.firstChild;
-  alertContainer.innerHTML =
-      alertContainer.innerHTML
-          .replace('show them when you right click). ', 'show them when you right click).<br />')
-          .replace(
-              'the old style of playlist buttons.',
-              '"the old style" of playlist buttons (<b>recommended</b>) - ' +
-                  'more compact playlist with nice icons ' +
-                  `(see image <a href="https://dl.dropboxusercontent.com/s/4ya7i5vlyb3likk/oldpl.jpg" target="_blank">here</a>).`);
+    const /** @type {HTMLDivElement} */ alertContainer = alertWrapper.firstChild;
+    alertContainer.innerHTML =
+        alertContainer.innerHTML
+            .replace('show them when you right click). ', 'show them when you right click).<br />')
+            .replace(
+                'the old style of playlist buttons.',
+                '"the old style" of playlist buttons (<b>recommended</b>) - ' +
+                    'more compact playlist with nice icons ' +
+                    `(see image <a href="https://dl.dropboxusercontent.com/s/4ya7i5vlyb3likk/oldpl.jpg" target="_blank">here</a>).`);
 
-  // Updating the innerHTML removes the event handler on the dismiss button, re-add it
-  const /** @type {HTMLButtonElement} */ dismissButton =
-      Array.from(alertContainer.children)
-          .filter((elem) => elem.tagName.toLowerCase() === 'button')[0];
-  dismissButton.addEventListener('click', () => {
-    alertContainer.remove();
-    window.localStorage['first_visit'] = 'false';
-  });
+    // Updating the innerHTML removes the event handler on the dismiss button, re-add it
+    const /** @type {HTMLButtonElement} */ dismissButton =
+        Array.from(alertContainer.children)
+            .filter((elem) => elem.tagName.toLowerCase() === 'button')[0];
+    dismissButton.addEventListener('click', () => {
+      alertContainer.remove();
+      window.localStorage['first_visit'] = 'false';
+    });
   })();
 
   // rearranging footer
-  $('.credit').append(
-      '<br />Built off CyTube Plus 4.5 · Copyright &copy; 2013-2014 Zimny Lech, Modified by CyDJ staff · ' +
-      'Free source on <a href="http://github.com/papertek/CyDJ" target="_blank">GitHub</a>');
+  $('.credit').append('<br />ip00 · Copyright &copy; ip0g');
 
   let leftfooter;
   let onlinetime;
@@ -7080,7 +6870,6 @@ var cydj = (function (exports) {
   setOpt(CHANNEL.name + '_visits', USERVISITS);
 
   {
-
     $('<span>My visits: </span>' +
       `<span class="badge footer-badge">${USERVISITS}</span>` +
       '<span> / </span>')
@@ -7098,12 +6887,8 @@ var cydj = (function (exports) {
 
   // /////////////////////////////////////////////////////////////////////////////////////////////////
 
-  {
-    ALTERCHATFORMAT = true;
-  }
-  {
-    ALTERCHATFORMAT = true;
-  }
+  { ALTERCHATFORMAT = true; }
+  { ALTERCHATFORMAT = true; }
 
   // Alter chat messages formatting.
   // DEV NOTE: this is extended function from CyTube "util.js" file
@@ -7156,7 +6941,7 @@ var cydj = (function (exports) {
       if (!skip) {
         uname.appendTo(div);
       }
-      const mark = UsernameMark_Char ;
+      const mark = UsernameMark_Char;
       $('<strong class="username" />').text(data.username + mark + ' ').appendTo(uname);
 
       if (data.meta.modflair) {
@@ -7198,7 +6983,7 @@ var cydj = (function (exports) {
           const html = `<img src="${emote[1]}" title="${filter}" ` +
               `style="width:${emote[2]}px; ` +
               `height:${emote[3]}px; cursor:pointer" ` +
-              `onclick="cydj.insertText('${filter}')" />`;
+              `onclick="ip00.insertText('${filter}')" />`;
           _div = _div.replace(new RegExp(filter, 'g'), html);
         }
         div.html(_div);
@@ -7264,9 +7049,7 @@ var cydj = (function (exports) {
           if (AUTOVID) {
             vid.prop('autoplay', 'true').prop('muted', 'true');
           }
-          {
-            vid.attr('controls', '');
-          }
+          { vid.attr('controls', ''); }
           $(this).html(vid);
         });
       }
@@ -7719,13 +7502,16 @@ var cydj = (function (exports) {
     $('#userlist').toggleClass('userlist-large', !!cookie.userlistLarge);
     $('#messagebuffer')
         .toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
-    $('#chatline').toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
+    $('#chatline')
+        .toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
     $('#leftcontrols')
         .toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
-    $('#videowrap').toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
+    $('#videowrap')
+        .toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
     $('#rightcontrols')
         .toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
-    $('#rightpane').toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
+    $('#rightpane')
+        .toggleClass('userlist-hidden', !!cookie.userlistHidden || !!cookie.userlistLarge);
     userlistSizeToggleInner.style.width = !!cookie.userlistLarge ? '100%' : '50%';
   }
   let cookie;
@@ -8031,8 +7817,7 @@ var cydj = (function (exports) {
   exports.toggleCat = toggleCat;
   exports.updateChatStats = updateChatStats;
 
-  Object.defineProperty(exports, '__esModule', { value: true });
+  Object.defineProperty(exports, '__esModule', {value: true});
 
   return exports;
-
 })({});
