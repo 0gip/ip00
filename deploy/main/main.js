@@ -3844,7 +3844,7 @@ var ip00 = (function(exports) {
 
   const Favicon_URL = 'https://cdn.7tv.app/emote/62b50c58a71bddc849d25ff8/2x.webp';
 
-  const MiniLogo_URL = 'https://cdn.7tv.app/emote/62b50c58a71bddc849d25ff8/2x.webp';
+  const MiniLogo_URL = 'https://cdn.7tv.app/emote/62b50c58a71bddc849d25ff8/1x.webp';
 
   const ChannelName_Caption = 'ip00';
 
